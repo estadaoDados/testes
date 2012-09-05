@@ -25,9 +25,9 @@ estados = ["AC","AL","AM","AP","BA","CE","ES","GO","MA","MG","MS","MT","PA","PB"
 # Carregando arquivo csv com os dados na variável f
     # O arquivo csv não deve conter cabeçalho e deve usar virgula como separador.
 f = open('dados.csv', 'r')
-
+cabecalho_velho = ("nome_partido","Geral_abs","Geral_perc","AC_abs","AC_perc","AL_abs","AL_perc","AM_abs","AM_perc","AP_abs","AP_perc","BA_abs","BA_perc","CE_abs","CE_perc","ES_abs","ES_perc","GO_abs","GO_perc","MA_abs","MA_perc","MG_abs","MG_perc","MS_abs","MS_perc","MT_abs","MT_perc","PA_abs","PA_perc","PB_abs","PB_perc","PE_abs","PE_perc","PI_abs","PI_perc","PR_abs","PR_perc","RJ_abs","RJ_perc","RN_abs","RN_perc","RO_abs","RO_perc","RR_abs","RR_perc","RS_abs","RS_perc","SC_abs","SC_perc","SE_abs","SE_perc","SP_abs","SP_perc","TO_abs","TO_perc")
 #lendo a variável com o DictReader, que vai gerar um dicionário que não vai estar no formato que desejamos, ainda.
-reader = csv.DictReader(f,delimiter=";",fieldnames=("nome_partido","Geral_abs","Geral_perc","AC_abs","AC_perc","AL_abs","AL_perc","AM_abs","AM_perc","APbs","AP_perc","BA_abs","BA_perc","CE_abs","CE_perc","ES_abs","ES_perc","GO_abs","GO_perc","MA_abs","MA_perc","MG_abs","MG_perc","MS_abs","MS_perc","MT_abs","MT_perc","PA_abs","PA_perc","PB_abs","PB_perc","PE_abs","PE_perc","PI_abs","PI_perc","PR_abs","PR_perc","RJ_abs","RJ_pe","RN_abs","RN_perc","RO_abs","RO_perc","RR_abs","RR_perc","RS_abs","RS_perc","SC_abs","SC_perc","SE_abs","SE_perc","SP_abs","SP_perc","TO_abs","TO_perc"))
+reader = csv.DictReader(f,delimiter=";",fieldnames=cabecalho_velho)
 
 dados_parciais = {}
 dados_parciais['outros'] = {}
@@ -40,6 +40,7 @@ for linha in reader:
     else:
         dados_parciais['outros'][linha['nome_partido']] = linha
 
+#Gerando um dicionário tradicional com estrutura "{partido:{estado:valor,...},...,outros:{partido:{estado:valor,...},...}}" com os dados absolutos
 def dictAbsolutos(dicionario):
     resultado = {} #dicionário só com dados absolutos
     resultado['outros'] = {}
@@ -48,15 +49,51 @@ def dictAbsolutos(dicionario):
         if partido != "outros":
             resultado[partido]={}
             for estado in estados:
-                print resultado[partido]
-                resultado[partido][estado] = dicionario[partido][estado + "_abs"]
+                if dicionario[partido][estado + "_abs"]:
+                    resultado[partido][estado] = dicionario[partido][estado + "_abs"]
+                else:
+                    resultado[partido][estado] = '0'
         else:
-            for outros_partido in partido:
+            for outros_partido in dicionario['outros']:
                 resultado['outros'][outros_partido] = {}
                 for estado in estados:
+                    if dicionario['outros'][outros_partido][estado + "_abs"]:
                         resultado['outros'][outros_partido][estado] = dicionario['outros'][outros_partido][estado + "_abs"]
+                    else:
+                        resultado['outros'][outros_partido][estado] = '0'
     return resultado
 
-dados_finais_absolutos = dictAbsolutos(dados_parciais)
+def geraDictPartido(partido,dicionarioPartido):
+    resultado = {}
+    resultado["name"] = partido
+    resultado["children"] = []
+    for estado in estados:
+        resultado["children"].append(dict(name=estado,size=dicionarioPartido[estado]))
+    return resultado
 
-print dados_finais_absolutos
+def geraJson(dicionario):
+    resultado = {}
+    resultado['name'] = "apuracao"
+    resultado['children'] = [] #cada 'children' será um dicionário com name:partido, children[{estados}]
+    
+    for item in dicionario:
+        if item != 'outros':
+            partido = item
+            resultado['children'].append(geraDictPartido(partido,dicionario[partido]))
+        else:
+            outros_children = []
+            for partido in dicionario['outros']:
+                outros_children.append(geraDictPartido(partido,dicionario['outros'][partido]))
+            resultado['children'].append(dict(name='outros',children=outros_children))
+    with open('newjson.json', 'wb') as fp:
+        json.dump(resultado,fp)
+    print resultado
+
+def gravaJson(dados,arquivo):
+    exit = open('newjson.json', 'a')
+    exit.write(resultados + "\n")
+    exit.close()
+
+dados_finais_absolutos = dictAbsolutos(dados_parciais)
+geraJson(dados_finais_absolutos)
+
