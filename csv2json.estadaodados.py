@@ -40,29 +40,6 @@ for linha in reader:
     else:
         dados_parciais['outros'][linha['nome_partido']] = linha
 
-def textosParaNumeros(dicionario):
-    #Transformando dados de texto para números (e adicionando 0 aonde não temos dado e convertendo string to int)
-    for partido in dicionario:
-        if partido != "outros":
-            for estado in dicionario[partido]:
-                print partido + " - " + estado
-                if dicionario[partido][estado]:
-                    print "     Valor: " + dicionario[partido][estado]
-                    print Decimal(dicionario[partido][estado])
-                    dicionario[partido][estado] = Decimal([partido][estado])
-                else:
-                    dicionario[partido][estado] = 0.0
-        else:
-            for outros_partido in dicionario['outros'][partido]:
-                for estado in outros_partido:
-                    if dicionario['outros'][outros_partido][estado]:
-                        dicionario['outros'][outros_partido][estado] = Decimal(dicionario['outros'][outros_partido][estado])
-                    else:
-                        dicionario['outros'][outros_partido][estado] = 0.0
-    
-    return dicionario
-
-
 def dictAbsolutos(dicionario):
     resultado = {} #dicionário só com dados absolutos
     resultado['outros'] = {}
@@ -80,7 +57,6 @@ def dictAbsolutos(dicionario):
                         resultado['outros'][outros_partido][estado] = dicionario['outros'][outros_partido][estado + "_abs"]
     return resultado
 
-#dados_parciais = textosParaNumeros(dados_parciais)
 dados_finais_absolutos = dictAbsolutos(dados_parciais)
 
 print dados_finais_absolutos
