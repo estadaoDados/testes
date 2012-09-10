@@ -8,7 +8,7 @@ var x = d3.scale.linear()
     .range([0, width]);
 
 //var y = 20; // bar height
-var y = 15; // bar height
+var y = 12; // bar height
 
 var z = d3.scale.ordinal()
     .range(["steelblue", "#ccc"]); // bar color
