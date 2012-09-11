@@ -1,14 +1,14 @@
-var margin = {top: 20, right: 20, bottom: 20, left: 120},
+var margin = {top: 40, right: 20, bottom: 20, left: 45},
     //width = 960 - margin.right - margin.left,
     //height = 500 - margin.top - margin.bottom;
     width = 980 - margin.right - margin.left,
     height = 400 - margin.top - margin.bottom;
 
-var x = d3.scale.linear()
-    .range([0, width]);
+var y = d3.scale.linear()
+    .range([0,height]);
 
-//var y = 20; // bar height
-var y = 12; // bar height
+var x = 27; // bar width
+//var y = 12; // bar height
 
 var z = d3.scale.ordinal()
     .range(["steelblue", "#ccc"]); // bar color
@@ -19,15 +19,15 @@ var duration = 750,
 var hierarchy = d3.layout.partition()
     .value(function(d) { return d.size; });
 
-var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient("top");
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#estadaoDados").append("svg")
     .attr("width", width + margin.right + margin.left)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    .attr("transform", "translate(" + margin.left + ",7)");// + margin.top + ")");
 
 svg.append("rect")
     .attr("class", "background")
@@ -36,16 +36,18 @@ svg.append("rect")
     .on("click", up);
 
 svg.append("g")
-    .attr("class", "x axis");
+    .attr("class", "y axis");
 
 svg.append("g")
-    .attr("class", "y axis")
+    .attr("class", "x axis")
   .append("line")
-    .attr("y1", "100%");
+    .attr("y1", height)
+    .attr("y2", height)
+    .attr("x1", width)
 
 d3.json("estadaodados.json", function(root) {
   hierarchy.nodes(root);
-  x.domain([0, root.value]).nice();
+  y.domain([0, root.value]).nice();
   down(root, 0);
 });
 
@@ -71,24 +73,24 @@ function down(d, i) {
   enter.select("text").style("fill-opacity", 1e-6);
   enter.select("rect").style("fill", z(true));
 
-  // Update the x-scale domain.
-  x.domain([0, d3.max(d.children, function(d) { return d.value; })]).nice();
+  // Update the y-scale domain.
+  y.domain([0,d3.max(d.children, function(d) { return d.value; })]).nice();
 
-  // Update the x-axis.
-  svg.selectAll(".x.axis").transition().duration(duration).call(xAxis);
+  // Update the y-axis.
+  svg.selectAll(".y.axis").transition().duration(duration).call(yAxis);
 
   // Transition entering bars to their new position.
   var enterTransition = enter.transition()
       .duration(duration)
       .delay(function(d, i) { return i * delay; })
-      .attr("transform", function(d, i) { return "translate(0," + y * i * 1.2 + ")"; });
+      .attr("transform", function(d, i) { return "translate(" + x * i * 1.2 + ",0)"; });
 
   // Transition entering text.
   enterTransition.select("text").style("fill-opacity", 1);
 
   // Transition entering rects to the new x-scale.
   enterTransition.select("rect")
-      .attr("width", function(d) { return x(d.value); })
+      .attr("height", function(d) { return y(d.value); })
       .style("fill", function(d) { return z(!!d.children); });
 
   // Transition exiting bars to fade out.
@@ -98,7 +100,7 @@ function down(d, i) {
       .remove();
 
   // Transition exiting bars to the new x-scale.
-  exitTransition.selectAll("rect").attr("width", function(d) { return x(d.value); });
+  exitTransition.selectAll("rect").attr("width", function(d) { return y(d.value); });
 
   // Rebind the current node to the background.
   svg.select(".background").data([d]).transition().duration(end); d.index = i;
@@ -113,7 +115,7 @@ function up(d) {
 
   // Enter the new bars for the clicked-on data's parent.
   var enter = bar(d.parent)
-      .attr("transform", function(d, i) { return "translate(0," + y * i * 1.2 + ")"; })
+      .attr("transform", function(d, i) { return "translate(" + x * i * 1.2 + ",0)"; })
       .style("opacity", 1e-6);
 
   // Color the bars as appropriate.
@@ -124,10 +126,10 @@ function up(d) {
       .style("fill-opacity", 1e-6);
 
   // Update the x-scale domain.
-  x.domain([0, d3.max(d.parent.children, function(d) { return d.value; })]).nice();
+  y.domain([0,d3.max(d.parent.children, function(d) { return d.value; })]).nice();
 
   // Update the x-axis.
-  svg.selectAll(".x.axis").transition().duration(duration).call(xAxis);
+  svg.selectAll(".y.axis").transition().duration(duration).call(yAxis);
 
   // Transition entering bars to fade in over the full duration.
   var enterTransition = enter.transition()
@@ -137,7 +139,7 @@ function up(d) {
   // Transition entering rects to the new x-scale.
   // When the entering parent rect is done, make it visible!
   enterTransition.select("rect")
-      .attr("width", function(d) { return x(d.value); })
+      .attr("height", function(d) { return y(d.value); })
       .each("end", function(p) { if (p === d) d3.select(this).style("fill-opacity", null); });
 
   // Transition exiting bars to the parent's position.
@@ -152,7 +154,7 @@ function up(d) {
 
   // Transition exiting rects to the new scale and fade to parent color.
   exitTransition.select("rect")
-      .attr("width", function(d) { return x(d.value); })
+      .attr("height", function(d) { return y(d.value); })
       .style("fill", z(true));
 
   // Remove exiting nodes when the last child has finished transitioning.
@@ -166,7 +168,7 @@ function up(d) {
 function bar(d) {
   var bar = svg.insert("g", ".y.axis")
       .attr("class", "enter")
-      .attr("transform", "translate(0,5)")
+      .attr("transform", "translate(5,0)")
     .selectAll("g")
       .data(d.children)
     .enter().append("g")
@@ -174,32 +176,35 @@ function bar(d) {
       .on("click", down);
 
   bar.append("text")
-      .attr("x", -6)
-      .attr("y", y / 2)
-      .attr("dy", ".35em")
-      .attr("text-anchor", "end")
+      .attr("x", x / 2)
+      .attr("y", height)
+      .attr("dx", ".35em")
+      .attr("transform","rotate(-45 " + x/2 + " " + height + "), translate(-20, " + margin.bottom + ")")
+      .attr("text-anchor", "middle")
       .text(function(d) { return d.name; });
 
   bar.append("rect")
-      .attr("width", function(d) { return x(d.value); })
-      .attr("height", y);
-
+      .attr("y", 0)
+      .attr("height", function(d) { return y(d.value); })
+      .attr("width", x)
+     // .attr("transform", "rotate(180), translate(-" + 1.4*margin.right + ", -" + height + ")")
+/*
     bar.append("svg:line")
         .attr("class", "marker")
-        .attr("x1", function(d) { return x(d.value);})
-        .attr("x2", function(d) { return x(d.value);})
-        .attr("y1", y/6)
-        .attr("y2", y*5/6);
-    
+        .attr("y1", function(d) { return y(d.value);})
+        .attr("y2", function(d) { return y(d.value);})
+        .attr("x1", x/6)
+        .attr("x2", x*5/6);
+  */  
     return bar;
 }
 
-// A stateful closure for stacking bars horizontally.
+// A stateful closure for stacking bars vertically.
 function stack(i) {
-  var x0 = 0;
+  var y0 = 0;
   return function(d) {
-    var tx = "translate(" + x0 + "," + y * i * 1.2 + ")";
-    x0 += x(d.value);
-    return tx;
+    var ty = "translate(" + x * i * 1.2 + ",-" + y0 + ")";
+    y0 += y(d.value);
+    return ty;
   };
 }
