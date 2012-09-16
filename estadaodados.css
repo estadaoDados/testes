@@ -1,0 +1,22 @@
+text {
+  font: 12px sans-serif;
+}
+
+rect.background {
+  fill: white;
+}
+
+.axis {
+  shape-rendering: crispEdges;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+}
+
+.marker {
+    fill: #FFFFFF;
+    stroke: #000000;
+    stroke-width: 1.5px;
+}
