@@ -15,17 +15,10 @@ d3.json("estadaodados.json", function(data) {
 nv.addGraph(function() {
     var chart = nv.models.bulletChart()
     
-    d3.select('#chart svg')
-            .attr("width", width)
-            .attr("height",height)
+    d3.select('#estadaoDados').append("svg")
         .selectAll("svg")
             .data(data)
-        .enter().append('g')
-            .attr("class", "bullet")
-            .attr("transform",function(d,i){ return "translate(0,"+i*50+")";})
-            .attr("width", barWidth)
-            .attr("height", barHeight)
-        .append("g")
+        .enter().append("g")
             .attr("transform", "translate(" + barMargin.left + "," + barMargin.top + ")")
             .transition().duration(1000)
             .call(chart);
