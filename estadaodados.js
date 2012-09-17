@@ -10,11 +10,9 @@ var chart = nv.models.bulletChart()
     .width(width - margin.right - margin.left)
     .height(height - margin.top - margin.bottom);
 
-
-
 d3.json("estadaodados.json", function(data) {
 
-//nv.addGraph(function() {
+nv.addGraph(function() {
     var chart = nv.models.bulletChart()
     
     d3.select('#chart svg')
@@ -32,7 +30,7 @@ d3.json("estadaodados.json", function(data) {
             .transition().duration(1000)
             .call(chart);
     return chart;
-});
+})});
 
 /*
   var vis = d3.select("#estadaoDados").selectAll("svg")
