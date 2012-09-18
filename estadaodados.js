@@ -16,6 +16,8 @@ nv.addGraph(function() {
     var chart = nv.models.bulletChart()
     
     d3.select('#estadaoDados').append("svg")
+            .attr("height", height)
+            .attr("width", width)
         .selectAll("svg")
             .data(data)
         .enter().append("g")
