@@ -1,7 +1,7 @@
 [
-  {"title":"PMDB","subtitle":"","ranges":[150,225,300],"measures":[220,270],"markers":[250]},
-  {"title":"PT","subtitle":"","ranges":[20,25,30],"measures":[21,23],"markers":[26]},
-  {"title":"PSDB","subtitle":"","ranges":[350,500,600],"measures":[100,320],"markers":[550]},
-  {"title":"PSD","subtitle":"","ranges":[140,200,250],"measures":[100,165],"markers":[210]},
-  {"title":"DEM","subtitle":"","ranges":[35,425,5],"measures":[32,47],"markers":[44]}
+  {"title":"PMDB","subtitle":"","ranges":[1100,1199,1199],"measures":[500,900],"markers":[]},
+  {"title":"PT","subtitle":"","ranges":[500,553,553],"measures":[550,600],"markers":[]},
+  {"title":"PSDB","subtitle":"","ranges":[770,789,789],"measures":[350,400],"markers":[]},
+  {"title":"PSD","subtitle":"","ranges":[120,135,135],"measures":[140,185],"markers":[]},
+  {"title":"DEM","subtitle":"","ranges":[450,500,500],"measures":[100,130],"markers":[]}
 ]
