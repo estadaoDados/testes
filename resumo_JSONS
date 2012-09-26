@@ -1,0 +1,179 @@
+Prefeitos - Partido Principais Nacional (*Outros = consolidado dos outros partidos)
+dados2012[valor1, valor2]:
+   - valor1 = Total de prefeitos eleitos em primeiro turno
+   - valor2 = Total de prefeitos eleitos em primeiro turno + total de candidatos em segundo turno
+[
+  {"title":"PMDB","subtitle":"","dados2008":[1193,1205,1205],"dados2012":[1142,1161],"valorFinal2008":[1201]},
+  {"title":"PT","subtitle":"","dados2008":[550,565,1205],"dados2012":[667,692],"valorFinal2008":[558]},
+  {"title":"PSDB","subtitle":"","dados2008":[787,797,1205],"dados2012":[795,820],"valorFinal2008":[791]},
+  {"title":"PSD","subtitle":"","dados2008":[0,0,1205],"dados2012":[530,539],"valorFinal2008":[0]},
+  {"title":"PSB","subtitle":"","dados2008":[308,314,1205],"dados2012":[440,447],"valorFinal2008":[310]},
+  {"title":"DEM","subtitle":"","dados2008":[495,497,1205],"dados2012":[200,200],"valorFinal2008":[496]},
+  {"title":"PP","subtitle":"","dados2008":[549,552,1205],"dados2012":[537,539],"valorFinal2008":[551]},
+  {"title":"PTB","subtitle":"","dados2008":[410,414,1205],"dados2012":[383,385],"valorFinal2008":[413]},
+  {"title":"PR","subtitle":"","dados2008":[384,386,1205],"dados2012":[355,355],"valorFinal2008":[385]},
+  {"title":"PDT","subtitle":"","dados2008":[351,353,1205],"dados2012":[131,131],"valorFinal2008":[352]},
+  {"title":"PPS","subtitle":"","dados2008":[129,131,1205],"dados2012":[130,130],"valorFinal2008":[129]},
+  {"title":"PV","subtitle":"","dados2008":[75,76,1205],"dados2012":[95,95],"valorFinal2008":[75]},
+  {"title":"Outros","subtitle":"","dados2008":[282,283,1205],"dados2012":[377,377],"valorFinal2008":[282]}
+]
+Prefeitos - Partidos Secundários Nacional
+[
+  {"title":"PSC","subtitle":"","dados2008":[57,57,1205],"dados2012":[76,76],"valorFinal2008":[57]},
+  {"title":"PRB","subtitle":"","dados2008":[54,54,1205],"dados2012":[68,68],"valorFinal2008":[54]},
+  {"title":"PMN","subtitle":"","dados2008":[42,42,1205],"dados2012":[47,47],"valorFinal2008":[42]},
+  {"title":"PCdoB","subtitle":"","dados2008":[41,42,1205],"dados2012":[55,55],"valorFinal2008":[41]},
+  {"title":"PRP","subtitle":"","dados2008":[17,17,1205],"dados2012":[27,27],"valorFinal2008":[17]},
+  {"title":"PTN","subtitle":"","dados2008":[16,16,1205],"dados2012":[18,18],"valorFinal2008":[16]},
+  {"title":"PSL","subtitle":"","dados2008":[15,15,1205],"dados2012":[22,22],"valorFinal2008":[15]},
+  {"title":"PHS","subtitle":"","dados2008":[13,13,1205],"dados2012":[17,17],"valorFinal2008":[13]},
+  {"title":"PTC","subtitle":"","dados2008":[13,13,1205],"dados2012":[13,13],"valorFinal2008":[13]},
+  {"title":"PRTB","subtitle":"","dados2008":[11,11,1205],"dados2012":[12,12],"valorFinal2008":[11]},
+  {"title":"PSDC","subtitle":"","dados2008":[8,8,1205],"dados2012":[11,11],"valorFinal2008":[8]},
+  {"title":"PTdoB","subtitle":"","dados2008":[8,8,1205],"dados2012":[11,11],"valorFinal2008":[8]},
+  {"title":"PCB","subtitle":"","dados2008":[0,0,1205],"dados2012":[0,0],"valorFinal2008":[0]},
+  {"title":"PCO","subtitle":"","dados2008":[0,0,1205],"dados2012":[0,0],"valorFinal2008":[0]},
+  {"title":"PSOL","subtitle":"","dados2008":[0,0,1205],"dados2012":[0,0],"valorFinal2008":[0]},
+  {"title":"PSTU","subtitle":"","dados2008":[0,0,1205],"dados2012":[0,0],"valorFinal2008":[0]}
+]
+Prefeitos - Consolidado por Estado (principais estados) para um determinado Partido (*Outros = consolidado dos outros estados para este partido)
+[
+  {"title":"SP","subtitle":"","dados2008":[1193,1205,1205],"dados2012":[1142,1161],"valorFinal2008":[1201]},
+  {"title":"RJ","subtitle":"","dados2008":[550,565,1205],"dados2012":[667,692],"valorFinal2008":[558]},
+  {"title":"MG","subtitle":"","dados2008":[787,797,1205],"dados2012":[795,820],"valorFinal2008":[791]},
+  {"title":"SC","subtitle":"","dados2008":[0,0,1205],"dados2012":[530,539],"valorFinal2008":[0]},
+  {"title":"RS","subtitle":"","dados2008":[308,314,1205],"dados2012":[440,447],"valorFinal2008":[310]},
+  {"title":"PR","subtitle":"","dados2008":[495,497,1205],"dados2012":[200,200],"valorFinal2008":[496]},
+  {"title":"ES","subtitle":"","dados2008":[549,552,1205],"dados2012":[537,539],"valorFinal2008":[551]},
+  {"title":"MT","subtitle":"","dados2008":[410,414,1205],"dados2012":[383,385],"valorFinal2008":[413]},
+  {"title":"MS","subtitle":"","dados2008":[384,386,1205],"dados2012":[355,355],"valorFinal2008":[385]},
+  {"title":"GO","subtitle":"","dados2008":[351,353,1205],"dados2012":[131,131],"valorFinal2008":[352]},
+  {"title":"BA","subtitle":"","dados2008":[129,131,1205],"dados2012":[130,130],"valorFinal2008":[129]},
+  {"title":"PI","subtitle":"","dados2008":[75,76,1205],"dados2012":[95,95],"valorFinal2008":[75]},
+  {"title":"Outros","subtitle":"","dados2008":[282,283,1205],"dados2012":[377,377],"valorFinal2008":[282]}
+]
+Prefeitos - Consolidado por Estado (outros estados) para um determinado Partido
+[
+  {"title":"..","subtitle":"","dados2008":[1193,1205,1205],"dados2012":[1142,1161],"valorFinal2008":[1201]},
+  {"title":"..","subtitle":"","dados2008":[550,565,1205],"dados2012":[667,692],"valorFinal2008":[558]},
+  {"title":"..","subtitle":"","dados2008":[787,797,1205],"dados2012":[795,820],"valorFinal2008":[791]},
+]
+Vereadores - Partido Principais Nacional (*Outros = consolidado dos outros partidos)
+dados2012[valor1]:
+   - valor1 = Total de vereadores eleitos em primeiro turno
+[
+  {"title":"PMDB","subtitle":"","dados2008":[1205,1205],"dados2012":[1161],"valorFinal2008":[]},
+  {"title":"PT","subtitle":"","dados2008":[565,1205],"dados2012":[692],"valorFinal2008":[]},
+  {"title":"PSDB","subtitle":"","dados2008":[797,1205],"dados2012":[820],"valorFinal2008":[]},
+  {"title":"PSD","subtitle":"","dados2008":[0,1205],"dados2012":[539],"valorFinal2008":[]},
+  {"title":"PSB","subtitle":"","dados2008":[314,1205],"dados2012":[447],"valorFinal2008":[]},
+  {"title":"DEM","subtitle":"","dados2008":[497,1205],"dados2012":[200],"valorFinal2008":[]},
+  {"title":"PP","subtitle":"","dados2008":[549,1205],"dados2012":[539],"valorFinal2008":[]},
+  {"title":"PTB","subtitle":"","dados2008":[414,1205],"dados2012":[385],"valorFinal2008":[]},
+  {"title":"PR","subtitle":"","dados2008":[386,1205],"dados2012":[355],"valorFinal2008":[]},
+  {"title":"PDT","subtitle":"","dados2008":[353,1205],"dados2012":[131],"valorFinal2008":[]},
+  {"title":"PPS","subtitle":"","dados2008":[131,1205],"dados2012":[130],"valorFinal2008":[]},
+  {"title":"PV","subtitle":"","dados2008":[76,1205],"dados2012":[95],"valorFinal2008":[]},
+  {"title":"Outros","subtitle":"","dados2008":[283,1205],"dados2012":[377],"valorFinal2008":[]}
+]
+Vereadores - Partidos Secundários Nacional
+[
+  {"title":"PSC","subtitle":"","dados2008":[57,1205],"dados2012":[76],"valorFinal2008":[]},
+  {"title":"PRB","subtitle":"","dados2008":[54,1205],"dados2012":[68],"valorFinal2008":[]},
+  {"title":"PMN","subtitle":"","dados2008":[42,1205],"dados2012":[47],"valorFinal2008":[]},
+  {"title":"PCdoB","subtitle":"","dados2008":[42,1205],"dados2012":[55],"valorFinal2008":[]},
+  {"title":"PRP","subtitle":"","dados2008":[17,1205],"dados2012":[27],"valorFinal2008":[]},
+  {"title":"PTN","subtitle":"","dados2008":[16,1205],"dados2012":[18],"valorFinal2008":[]},
+  {"title":"PSL","subtitle":"","dados2008":[15,1205],"dados2012":[22],"valorFinal2008":[]},
+  {"title":"PHS","subtitle":"","dados2008":[13,1205],"dados2012":[17],"valorFinal2008":[]},
+  {"title":"PTC","subtitle":"","dados2008":[13,1205],"dados2012":[13],"valorFinal2008":[]},
+  {"title":"PRTB","subtitle":"","dados2008":[11,1205],"dados2012":[12],"valorFinal2008":[]},
+  {"title":"PSDC","subtitle":"","dados2008":[8,1205],"dados2012":[11],"valorFinal2008":[]},
+  {"title":"PTdoB","subtitle":"","dados2008":[8,1205],"dados2012":[11],"valorFinal2008":[]},
+  {"title":"PCB","subtitle":"","dados2008":[0,1205],"dados2012":[0],"valorFinal2008":[]},
+  {"title":"PCO","subtitle":"","dados2008":[0,1205],"dados2012":[0],"valorFinal2008":[]},
+  {"title":"PSOL","subtitle":"","dados2008":[0,1205],"dados2012":[0],"valorFinal2008":[]},
+  {"title":"PSTU","subtitle":"","dados2008":[0,1205],"dados2012":[0],"valorFinal2008":[]}
+]
+Vereadores - Consolidado por Estado (principais estados) para um determinado Partido (*Outros = consolidado dos outros estados para este partido)
+[
+  {"title":"SP","subtitle":"","dados2008":[1205,1205],"dados2012":[1161],"valorFinal2008":[]},
+  {"title":"RJ","subtitle":"","dados2008":[565,1205],"dados2012":[692],"valorFinal2008":[]},
+  {"title":"MG","subtitle":"","dados2008":[7797,1205],"dados2012":[820],"valorFinal2008":[]},
+  {"title":"SC","subtitle":"","dados2008":[0,1205],"dados2012":[539],"valorFinal2008":[]},
+  {"title":"RS","subtitle":"","dados2008":[314,1205],"dados2012":[447],"valorFinal2008":[]},
+  {"title":"PR","subtitle":"","dados2008":[497,1205],"dados2012":[200],"valorFinal2008":[]},
+  {"title":"ES","subtitle":"","dados2008":[552,1205],"dados2012":[539],"valorFinal2008":[]},
+  {"title":"MT","subtitle":"","dados2008":[414,1205],"dados2012":[385],"valorFinal2008":[]},
+  {"title":"MS","subtitle":"","dados2008":[386,1205],"dados2012":[355],"valorFinal2008":[]},
+  {"title":"GO","subtitle":"","dados2008":[353,1205],"dados2012":[131],"valorFinal2008":[]},
+  {"title":"BA","subtitle":"","dados2008":[131,1205],"dados2012":[130],"valorFinal2008":[]},
+  {"title":"PI","subtitle":"","dados2008":[76,1205],"dados2012":[95],"valorFinal2008":[]},
+  {"title":"Outros","subtitle":"","dados2008":[283,1205],"dados2012":[377],"valorFinal2008":[]}
+]
+Vereadores - Consolidado por Estado (outros estados) para um determinado Partido
+[
+  {"title":"..","subtitle":"","dados2008":[1205,1205],"dados2012":[1161],"valorFinal2008":[]},
+  {"title":"..","subtitle":"","dados2008":[565,1205],"dados2012":[692],"valorFinal2008":[]},
+  {"title":"..","subtitle":"","dados2008":[797,1205],"dados2012":[820],"valorFinal2008":[]},
+]
+Eleitorado - Partido Principais Nacional (*Outros = consolidado dos outros partidos)
+dados2012[valor1, valor2]:
+   - valor1 = Total de eleitorado garantido em primeiro turno
+   - valor2 = Total de eleitorado garantido em primeiro turno + total de eleitorado possível para o segundo turno
+[
+  {"title":"PMDB","subtitle":"","dados2008":[1193,1205,1205],"dados2012":[1142,1161],"valorFinal2008":[1201]},
+  {"title":"PT","subtitle":"","dados2008":[550,565,1205],"dados2012":[667,692],"valorFinal2008":[558]},
+  {"title":"PSDB","subtitle":"","dados2008":[787,797,1205],"dados2012":[795,820],"valorFinal2008":[791]},
+  {"title":"PSD","subtitle":"","dados2008":[0,0,1205],"dados2012":[530,539],"valorFinal2008":[0]},
+  {"title":"PSB","subtitle":"","dados2008":[308,314,1205],"dados2012":[440,447],"valorFinal2008":[310]},
+  {"title":"DEM","subtitle":"","dados2008":[495,497,1205],"dados2012":[200,200],"valorFinal2008":[496]},
+  {"title":"PP","subtitle":"","dados2008":[549,552,1205],"dados2012":[537,539],"valorFinal2008":[551]},
+  {"title":"PTB","subtitle":"","dados2008":[410,414,1205],"dados2012":[383,385],"valorFinal2008":[413]},
+  {"title":"PR","subtitle":"","dados2008":[384,386,1205],"dados2012":[355,355],"valorFinal2008":[385]},
+  {"title":"PDT","subtitle":"","dados2008":[351,353,1205],"dados2012":[131,131],"valorFinal2008":[352]},
+  {"title":"PPS","subtitle":"","dados2008":[129,131,1205],"dados2012":[130,130],"valorFinal2008":[129]},
+  {"title":"PV","subtitle":"","dados2008":[75,76,1205],"dados2012":[95,95],"valorFinal2008":[75]},
+  {"title":"Outros","subtitle":"","dados2008":[282,283,1205],"dados2012":[377,377],"valorFinal2008":[282]}
+]
+Eleitorado - Partidos Secundários Nacional
+[
+  {"title":"PSC","subtitle":"","dados2008":[57,57,1205],"dados2012":[76,76],"valorFinal2008":[57]},
+  {"title":"PRB","subtitle":"","dados2008":[54,54,1205],"dados2012":[68,68],"valorFinal2008":[54]},
+  {"title":"PMN","subtitle":"","dados2008":[42,42,1205],"dados2012":[47,47],"valorFinal2008":[42]},
+  {"title":"PCdoB","subtitle":"","dados2008":[41,42,1205],"dados2012":[55,55],"valorFinal2008":[41]},
+  {"title":"PRP","subtitle":"","dados2008":[17,17,1205],"dados2012":[27,27],"valorFinal2008":[17]},
+  {"title":"PTN","subtitle":"","dados2008":[16,16,1205],"dados2012":[18,18],"valorFinal2008":[16]},
+  {"title":"PSL","subtitle":"","dados2008":[15,15,1205],"dados2012":[22,22],"valorFinal2008":[15]},
+  {"title":"PHS","subtitle":"","dados2008":[13,13,1205],"dados2012":[17,17],"valorFinal2008":[13]},
+  {"title":"PTC","subtitle":"","dados2008":[13,13,1205],"dados2012":[13,13],"valorFinal2008":[13]},
+  {"title":"PRTB","subtitle":"","dados2008":[11,11,1205],"dados2012":[12,12],"valorFinal2008":[11]},
+  {"title":"PSDC","subtitle":"","dados2008":[8,8,1205],"dados2012":[11,11],"valorFinal2008":[8]},
+  {"title":"PTdoB","subtitle":"","dados2008":[8,8,1205],"dados2012":[11,11],"valorFinal2008":[8]},
+  {"title":"PCB","subtitle":"","dados2008":[0,0,1205],"dados2012":[0,0],"valorFinal2008":[0]},
+  {"title":"PCO","subtitle":"","dados2008":[0,0,1205],"dados2012":[0,0],"valorFinal2008":[0]},
+  {"title":"PSOL","subtitle":"","dados2008":[0,0,1205],"dados2012":[0,0],"valorFinal2008":[0]},
+  {"title":"PSTU","subtitle":"","dados2008":[0,0,1205],"dados2012":[0,0],"valorFinal2008":[0]}
+]
+Eleitorado - Consolidado por Estado (principais estados) para um determinado Partido (*Outros = consolidado dos outros estados para este partido)
+[
+  {"title":"SP","subtitle":"","dados2008":[1193,1205,1205],"dados2012":[1142,1161],"valorFinal2008":[1201]},
+  {"title":"RJ","subtitle":"","dados2008":[550,565,1205],"dados2012":[667,692],"valorFinal2008":[558]},
+  {"title":"MG","subtitle":"","dados2008":[787,797,1205],"dados2012":[795,820],"valorFinal2008":[791]},
+  {"title":"SC","subtitle":"","dados2008":[0,0,1205],"dados2012":[530,539],"valorFinal2008":[0]},
+  {"title":"RS","subtitle":"","dados2008":[308,314,1205],"dados2012":[440,447],"valorFinal2008":[310]},
+  {"title":"PR","subtitle":"","dados2008":[495,497,1205],"dados2012":[200,200],"valorFinal2008":[496]},
+  {"title":"ES","subtitle":"","dados2008":[549,552,1205],"dados2012":[537,539],"valorFinal2008":[551]},
+  {"title":"MT","subtitle":"","dados2008":[410,414,1205],"dados2012":[383,385],"valorFinal2008":[413]},
+  {"title":"MS","subtitle":"","dados2008":[384,386,1205],"dados2012":[355,355],"valorFinal2008":[385]},
+  {"title":"GO","subtitle":"","dados2008":[351,353,1205],"dados2012":[131,131],"valorFinal2008":[352]},
+  {"title":"BA","subtitle":"","dados2008":[129,131,1205],"dados2012":[130,130],"valorFinal2008":[129]},
+  {"title":"PI","subtitle":"","dados2008":[75,76,1205],"dados2012":[95,95],"valorFinal2008":[75]},
+  {"title":"Outros","subtitle":"","dados2008":[282,283,1205],"dados2012":[377,377],"valorFinal2008":[282]}
+]
+Eleitorado - Consolidado por Estado (outros estados) para um determinado Partido
+[
+  {"title":"..","subtitle":"","dados2008":[1193,1205,1205],"dados2012":[1142,1161],"valorFinal2008":[1201]},
+  {"title":"..","subtitle":"","dados2008":[550,565,1205],"dados2012":[667,692],"valorFinal2008":[558]},
+  {"title":"..","subtitle":"","dados2008":[787,797,1205],"dados2012":[795,820],"valorFinal2008":[791]},
+]
