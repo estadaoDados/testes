@@ -1,0 +1,12 @@
+[
+  {"title":"PMDB","subtitle":"","dados2008":[1193,1205,1205],"dados2012":[1142,1161],"valorFinal2008":[1201]},
+  {"title":"PT","subtitle":"","dados2008":[550,565,1205],"dados2012":[667,692],"valorFinal2008":[558]},
+  {"title":"PSDB","subtitle":"","dados2008":[787,797,1205],"dados2012":[795,820],"valorFinal2008":[791]},
+  {"title":"PSD","subtitle":"","dados2008":[0,0,1205],"dados2012":[530,539],"valorFinal2008":[0]},
+  {"title":"PSB","subtitle":"","dados2008":[308,314,1205],"dados2012":[440,447],"valorFinal2008":[310]},
+  {"title":"DEM","subtitle":"","dados2008":[495,497,1205],"dados2012":[200,200],"valorFinal2008":[496]},
+  {"title":"PP","subtitle":"","dados2008":[549,552,1205],"dados2012":[537,539],"valorFinal2008":[551]},
+  {"title":"PTB","subtitle":"","dados2008":[410,414,1205],"dados2012":[383,385],"valorFinal2008":[413]},
+  {"title":"PR","subtitle":"","dados2008":[384,386,1205],"dados2012":[355,355],"valorFinal2008":[385]},
+  {"title":"PDT","subtitle":"","dados2008":[351,353,1205],"dados2012":[131,131],"valorFinal2008":[352]}
+]
