@@ -34,6 +34,7 @@ function geraGrafico(nomeJson) {
                 .attr("height", height)
                 .attr("width", width)
                 .attr("id", nomeJson)
+                .on("click",voltaGrafico())
             .selectAll("svg")
                 .data(data)
             .enter().append("g")
