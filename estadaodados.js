@@ -3,8 +3,8 @@ var width = 980,
     margin = {top: 5, right: 30, bottom: 20, left: 1}
 
 var barWidth = 980,
-    barHeight = 50,
-    barMargin = {top: 5, right: 5, bottom: 20, left: 23};
+    barHeight = 46,
+    barMargin = {top: 2, right: 5, bottom: 20, left: 23};
 
 var duracao = 1250,
     grafico = '',
