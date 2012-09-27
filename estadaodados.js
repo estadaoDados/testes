@@ -19,7 +19,7 @@ function geraGrafico(nomeJson) {
     
     jsonAtual = nomeJson
 
-    d3.json(nomeJson+".json", function(data) {
+    d3.json("dados/"+nomeJson+".json", function(data) {
         console.log(data)
         if (data) { 
             nv.addGraph(function() {
