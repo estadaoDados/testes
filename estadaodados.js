@@ -6,7 +6,7 @@ var barWidth = 980,
     barHeight = 50,
     barMargin = {top: 5, right: 5, bottom: 20, left: 23};
 
-var duracao = 2000,
+var duracao = 1250,
     grafico = '',
     jsonAtual = "",
     pilhaJson = [],
