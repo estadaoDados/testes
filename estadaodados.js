@@ -36,12 +36,15 @@ function geraGrafico(nomeJson) {
                         .duration(duracao)
                         .attr("height",height)
                 //*
-                svg.append("rect")
-                    .attr("class", "retornaBackground")
-                    .attr("width", "100%")//width - margin.left - margin.right)
-                    .attr("height", "100%")//height - margin.top - margin.bottom)
-                    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-                    .on("click",voltaGrafico)
+                if (!d3.select("#retornaBackground")[0][0]) {
+                    svg.append("rect")
+                        .attr("id", "retornaBackground")
+                        .attr("class", "retornaBackground")
+                        .attr("width", width)//width - margin.left - margin.right)
+                        .attr("height", height)//height - margin.top - margin.bottom)
+                        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+                        .on("click",voltaGrafico)
+                }
                 //*/
                 base = svg.append("g")
                         .attr("height", height)
