@@ -18,9 +18,8 @@ var duracao = 1250,
 function geraGrafico(nomeJson) {
     
     jsonAtual = nomeJson
-
+    var arquivo = "dados/"+nomeJson+".json"
     d3.json("dados/"+nomeJson+".json", function(data) {
-        console.log(data)
         if (data) { 
             nv.addGraph(function() {
                 var chart = nv.models.bulletChart()
@@ -112,7 +111,7 @@ function avancaGrafico(d){//(novoJson) {
     pilhaJson.push(jsonAtual)
     nv.log(pilhaJson)
     nv.log("avancaGrafico(): Avançando gráfico para " + d.title + "_estados")
-    novoGrafico(d.title + "_estados")
+    novoGrafico(d.nextlevel)
 }
 
 function voltaGrafico(){
@@ -138,4 +137,4 @@ function esconderAlerta() {
 }
 
 
-geraGrafico("partidos_parte1")
+geraGrafico("partidos")
