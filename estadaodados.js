@@ -139,14 +139,13 @@ function esconderAlerta() {
     document.getElementById("alertar").style.display = 'none'
 }
 
-function estadaoDadosMuda(aba){
-    console.log(aba)
-}
-
+//Funçào que identifica clique nas abas
 $("#estadaoDadosAbas li").click( function() {
     projecao = this.firstChild.text.toLowerCase()    
-    
-    console.log(projecao);
+    $("#estadaoDadosAbas a.selected").removeClass("selected")
+    $(this.firstChild).addClass("selected")
+    pilhaJson.length = 0
+    novoGrafico(projecao+"_partidos")
 })
 
 geraGrafico("prefeitos_partidos")
