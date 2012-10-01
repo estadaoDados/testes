@@ -3,6 +3,70 @@
     pointer-events: all;
 }
 
+#estadaoDadosMainFrame {
+    width: 980px;
+    height: 510px;
+    display: block;
+}
+
+#estadaoDadosMainFrame div.conteudo {
+    padding: 5px 5px 0 5px;
+    margin: 0 0 5px 0;
+    border: 1px solid #DFDFDF;
+    border-top: 0;
+}
+
+#estadaoDadosAbas {
+    position: relative;
+    height: 40px;
+    background: url('http://estadao.com.br/estadao/v2012/img/sprite_bg.png') repeat-x 0 -84px;
+}
+
+#estadaoDadosAbas ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#estadaoDadosAbas li {
+    float: left;
+}
+
+#estadaoDadosAbas li a {
+    display: block;
+    height: 35px;
+    margin: 4px 0 0 0;
+    padding: 0 10px;
+    vertical-align: middle;
+    text-align: center;
+    font: bold 12px/35px "Georgia", "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    color: #999;
+    background: #F4F4F4;
+    cursor:auto;
+    text-decoration: none;
+}
+
+#estadaoDadosAbas li a:hover {
+    text-decoration: none;
+    background: white;
+    cursor:auto;
+}
+
+#estadaoDadosAbas li a.selected,
+#estadaoDadosAbas li a.selected:hover {
+    height: 36px;
+    margin: 0;
+    line-height: 36px;
+    color: #005E8E;
+    border-top: 4px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
+    border-right: 1px solid #DFDFDF;
+    background: white;
+    text-decoration: none;
+    cursor:auto;
+}
+
 #alertar {
     display: none;
     text-align:center;
@@ -521,6 +585,7 @@ svg .title {
 .nvd3.nv-bullet rect { fill-opacity: .6; }
 .nvd3.nv-bullet rect:hover { fill-opacity: 1; }
 .nvd3.nv-bullet .nv-marker { stroke: #000; stroke-width: 2px; }
+.nvd3.nv-bullet .nv-markerLine { stroke: red; fill: none; stroke-width: 2; }
 .nvd3.nv-bullet .nv-markerTriangle { stroke: #000; fill: #fff; stroke-width: 1.5px; }
 .nvd3.nv-bullet .nv-tick line { stroke: #666; stroke-width: .5px; }
 .nvd3.nv-bullet .nv-range.nv-s0 { fill: #eee; }

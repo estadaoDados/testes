@@ -25,11 +25,21 @@
         
         <script type="text/javascript" src="../base/js/d3.min.js"></script>
         <script type="text/javascript" src="../base/js/nv.d3.js"></script>
+        <script type="text/javascript" src="../base/js/jquery-1.7.2.min.js"></script>
         <link rel="stylesheet" href="estadaodados.css" />
     </head>
   <body>
-        <div id="alertar" onClick="esconderAlerta()"></div>
-        <div id="estadaoDados" style="height:400px; width:980px"><svg id="svgEstadaoDados"></svg></div>
+        <section id="estadaoDadosMainFrame">
+            <div id="alertar" onClick="esconderAlerta()"></div>
+            <nav id="estadaoDadosAbas">
+                <ul>
+                    <li><a class="selected" href="#" >prefeitos</a></li>
+                    <li><a href="#" >votos</a></li>
+                    <li><a href="#" >eleitorado</a></li>
+                </ul>
+            </nav>
+            <div class="conteudo"><svg id="svgEstadaoDados"></svg></div>
+        </section>
         <script type="text/javascript" src="estadaodados.js"></script>
         <!--input type="button" onClick="avancaGrafico('pmdb')" name="botao" value="botao"/-->
   

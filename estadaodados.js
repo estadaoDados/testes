@@ -11,7 +11,8 @@ var duracao = 1250,
     jsonAtual = "",
     pilhaJson = [],
     erroEncontrado = false,
-    mensagemErro = ""
+    mensagemErro = "",
+    projecao = "prefeitos"
 
 
 //Função que gera um gráfico
@@ -132,12 +133,20 @@ function alertar() {
     div.style.display = 'block'
     div.style.top = height/2+'px'
     div.innerHTML = mensagemErro + "<br/><span id='fechar'>fechar</span>"
-    
 }
 
 function esconderAlerta() {
     document.getElementById("alertar").style.display = 'none'
 }
 
+function estadaoDadosMuda(aba){
+    console.log(aba)
+}
 
-geraGrafico("partidos")
+$("#estadaoDadosAbas li").click( function() {
+    projecao = this.firstChild.text.toLowerCase()    
+    
+    console.log(projecao);
+})
+
+geraGrafico("prefeitos_partidos")
