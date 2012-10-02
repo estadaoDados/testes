@@ -1,10 +1,10 @@
 [
-  {"title":"AM","nextlevel":"prefeitos_partidos","dados2008":[30,30,1200],"dados2012":[20,20],"valorFinal2008":[8]},
-  {"title":"MS","nextlevel":"prefeitos_partidos","dados2008":[30,30,1200],"dados2012":[20,20],"valorFinal2008":[8]},
-  {"title":"SE","nextlevel":"prefeitos_partidos","dados2008":[30,30,1200],"dados2012":[20,20],"valorFinal2008":[6]},
-  {"title":"RO","nextlevel":"prefeitos_partidos","dados2008":[30,30,1200],"dados2012":[20,20],"valorFinal2008":[7]},
-  {"title":"TO","nextlevel":"prefeitos_partidos","dados2008":[30,30,1200],"dados2012":[20,20],"valorFinal2008":[23]},
-  {"title":"AC","nextlevel":"prefeitos_partidos","dados2008":[30,30,1200],"dados2012":[20,20],"valorFinal2008":[1]},
-  {"title":"AP","nextlevel":"prefeitos_partidos","dados2008":[30,30,1200],"dados2012":[20,20],"valorFinal2008":[0]},
-  {"title":"RR","nextlevel":"prefeitos_partidos","dados2008":[30,30,1200],"dados2012":[20,20],"valorFinal2008":[2]}
+  {"title":"AM","nextlevel":"prefeitos_partidos","dados2008":[9 ,9 ,23],"dados2012":[20,20],"valorFinal2008":[]},
+  {"title":"MS","nextlevel":"prefeitos_partidos","dados2008":[8 ,8 ,23],"dados2012":[20,20],"valorFinal2008":[]},
+  {"title":"SE","nextlevel":"prefeitos_partidos","dados2008":[5 ,5 ,23],"dados2012":[20,20],"valorFinal2008":[]},
+  {"title":"RO","nextlevel":"prefeitos_partidos","dados2008":[7 ,7 ,23],"dados2012":[20,20],"valorFinal2008":[]},
+  {"title":"TO","nextlevel":"prefeitos_partidos","dados2008":[23,23,23],"dados2012":[20,20],"valorFinal2008":[]},
+  {"title":"AC","nextlevel":"prefeitos_partidos","dados2008":[1 ,1 ,23],"dados2012":[20,20],"valorFinal2008":[]},
+  {"title":"AP","nextlevel":"prefeitos_partidos","dados2008":[0 ,0 ,23],"dados2012":[20,20],"valorFinal2008":[]},
+  {"title":"RR","nextlevel":"prefeitos_partidos","dados2008":[2 ,2 ,23],"dados2012":[20,20],"valorFinal2008":[]}
 ]
