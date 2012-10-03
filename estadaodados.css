@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .retornaBackground {
     fill: none;
     pointer-events: all;
@@ -8,7 +13,19 @@
     max-height: 510px;
     height: auto;
     display: block;
-    font-family: "Georgia", "Times New Roman", Times, serif;;
+    font-family: arial;
+}
+
+#estadaoDadosMainFrame .titulo{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#estadaoDadosMainFrame .linhafina{
+    color: lightGrey;
+    background: lightGrey;
+    border: 0;
+    height: 1px;
 }
 
 #estadaoDadosMainFrame div.conteudo,
@@ -49,8 +66,8 @@
     padding: 0 10px;
     vertical-align: middle;
     text-align: center;
-    font: bold 12px/35px "Georgia", "Times New Roman", Times, serif;
-    text-transform: uppercase;
+    font: bold 14px/35px arial; 
+    text-transform: capitalize;
     color: #999;
     background: #F4F4F4;
     cursor:auto;
@@ -69,7 +86,7 @@
     margin: 0;
     line-height: 36px;
     color: #005E8E;
-    border-top: 4px solid #DFDFDF;
+    border-top: 4px solid #005E8E;
     border-left: 1px solid #DFDFDF;
     border-right: 1px solid #DFDFDF;
     background: white;
@@ -816,5 +833,3 @@ svg .title {
   cursor: s-resize;
   */
 }
-
-
