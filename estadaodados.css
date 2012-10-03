@@ -36,7 +36,7 @@ body {
     font: bold 14px/35px arial; 
     position: absolute;
     right: 1px; 
-    top: 48px;
+    top: 40px;
 }
 
 #estadaoDadosMainFrame #origemDados {
@@ -75,7 +75,7 @@ body {
 /* ABAS */
 #estadaoDadosAbas {
     position: relative;
-    height: 40px;
+    height: 34px;
     background: url('http://estadao.com.br/estadao/v2012/img/sprite_bg.png') repeat-x 0 -84px;
 }
 
@@ -91,13 +91,12 @@ body {
 
 #estadaoDadosAbas li a {
     display: block;
-    height: 35px;
-    margin: 4px 2px 0 0;
+    height: 32px;
+    margin: 0 2px 0 0;
     padding: 0 10px;
     vertical-align: middle;
     text-align: center;
     font: bold 14px/35px arial; 
-    /* text-transform: capitalize; */
     color: #999;
     background: #F4F4F4;
     cursor:auto;
@@ -112,11 +111,10 @@ body {
 
 #estadaoDadosAbas li a.selected,
 #estadaoDadosAbas li a.selected:hover {
-    height: 36px;
+    height: 32px;
     margin: 0;
-    line-height: 36px;
+    line-height: 32px;
     color: #005E8E;
-    border-top: 4px solid #005E8E;
     border-left: 1px solid #DFDFDF;
     border-right: 1px solid #DFDFDF;
     background: white;
@@ -137,7 +135,7 @@ body {
 #estadaoDadosMainFrame div.conteudo {
     padding: 0 !important;
     margin: 0 !important;
-    border: 1px solid #DFDFDF;
+    border: none; /*1px solid #DFDFDF;*/
     border-top: 0;
 }
 
@@ -220,7 +218,7 @@ body {
 .bullet .range.s0 { fill: #eee; }
 .bullet .range.s1 { fill: #ddd; }
 .bullet .range.s2 { fill: #ccc; }
-.bullet .measure.s0 { fill: lightsteelblue; }
+.bullet .measure.s0 { fill: #E89B0C;} /* lightsteelblue; } */
 .bullet .measure.s1 { fill: steelblue; }
 .bullet .title { font-size: 14px; font-weight: bold; }
 .bullet .subtitle { fill: #999; }
@@ -319,7 +317,8 @@ svg {
 
 
 svg text {
-  font: normal 12px sans-serif;
+  font-weight: bold;
+  font: 11px sans-serif;
 }
 
 svg .title {
@@ -704,14 +703,15 @@ svg .title {
 .nvd3.nv-bullet rect { fill-opacity: .6; }
 .nvd3.nv-bullet rect:hover { fill-opacity: 1; }
 .nvd3.nv-bullet .nv-marker { stroke: #000; stroke-width: 2px; }
-.nvd3.nv-bullet .nv-markerLine { stroke: red; fill: none; stroke-width: 2; opacity:1;}
+.nvd3.nv-bullet .nv-markerLine { stroke: #E80000; fill: none; stroke-width: 2; opacity:1;}
 .nvd3.nv-bullet .nv-markerTriangle { stroke: #000; fill: #fff; stroke-width: 1.5px; }
 .nvd3.nv-bullet .nv-tick line { stroke: #666; stroke-width: .5px; }
+.nvd3.nv-bullet .nv-tick { font-size: 9px !important; }
 .nvd3.nv-bullet .nv-range.nv-s0 { fill: #fff;}/* { fill: #eee; }*/ 
-.nvd3.nv-bullet .nv-range.nv-s1 { fill: #666;}/* { fill: #ddd; }*/ 
+.nvd3.nv-bullet .nv-range.nv-s1 { fill: #888;}/* { fill: #ddd; }*/ 
 .nvd3.nv-bullet .nv-range.nv-s2 { fill: #eee;}/* { fill: #ccc; }*/ 
-.nvd3.nv-bullet .nv-measure.nv-s0 { fill: steelblue; }
-.nvd3.nv-bullet .nv-measure.nv-s1 { fill: darkblue; }
+.nvd3.nv-bullet .nv-measure.nv-s0 { fill: #732800; }
+.nvd3.nv-bullet .nv-measure.nv-s1 { fill: #FF5900; }
 .nvd3.nv-bullet .nv-title { font-size: 14px; font-weight: bold; }
 .nvd3.nv-bullet .nv-subtitle { fill: #999; }
 
