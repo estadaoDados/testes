@@ -15,7 +15,18 @@ function ajustaConteudos {
         done
 }
 
-ajustaConteudos
+function criandoPatterns {
+    ARQUIVOS=`ls *estados*.json`
+    TEMPFILE="TEMPFILE.tmp"
+    for arquivo in $ARQUIVOS
+        do
+            #sed -e 's@dados2008":\[(\d\+),(.*?),(\d\+)\],"dados2012@dados2008":[\1,0,\3],"dados2012@g' $arquivo > $TEMPFILE
+            sed -e 's@valor_2@0@g' $arquivo > $TEMPFILE
+            mv $TEMPFILE $arquivo
+        done
+}
+
+criandoPatterns
 
 function mudaConteudo {
     ARQUIVOS_PREFEITOS=`ls prefeitos*`
@@ -25,20 +36,21 @@ function mudaConteudo {
     
     for arquivo in $ARQUIVOS_PREFEITOS 
         do
-            echo "$arquivo"
-            sed -e 's/nextlevel":"/nextlevel":"prefeitos_/' $arquivo > $TEMPFILE
+            #echo "$arquivo"
+            #sed -e 's/nextlevel":"/nextlevel":"prefeitos_/' $arquivo > $TEMPFILE
+            sed -e 's@\[30,30,1200\]@[valor_1,valor_2,valor_maximo]@g' $arquivo > $TEMPFILE
             mv $TEMPFILE $arquivo
         done
     
     for arquivo in $ARQUIVOS_VOTOS
         do
-            sed -e 's/nextlevel":"/nextlevel":"votos_/' $arquivo > $TEMPFILE
+            #sed -e 's/nextlevel":"/nextlevel":"votos_/' $arquivo > $TEMPFILE
             mv $TEMPFILE $arquivo
         done
     
     for arquivo in $ARQUIVOS_ELEITORADO
         do
-            sed -e 's/nextlevel":"/nextlevel":"eleitorado_/' $arquivo > $TEMPFILE
+            #sed -e 's/nextlevel":"/nextlevel":"eleitorado_/' $arquivo > $TEMPFILE
             mv $TEMPFILE $arquivo
         done
 }
