@@ -14,9 +14,6 @@
   {"title":"PB","nextlevel":"votos_partidos",                   "dados2008":[,,valor_maximo],"dados2012":[20,20],"valorFinal2008":[]},
   {"title":"ES","nextlevel":"votos_partidos",                   "dados2008":[,,valor_maximo],"dados2012":[20,20],"valorFinal2008":[]},
   {"title":"PI","nextlevel":"votos_partidos",                   "dados2008":[,,valor_maximo],"dados2012":[20,20],"valorFinal2008":[]},
-  {"title":"RN","nextlevel":"votos_partidos",                   "dados2008":[,,valor_maximo],"dados2012":[20,20],"valorFinal2008":[]},
-  {"title":"MT","nextlevel":"votos_partidos",                   "dados2008":[,,valor_maximo],"dados2012":[20,20],"valorFinal2008":[]},
-  {"title":"AL","nextlevel":"votos_partidos",                   "dados2008":[,,valor_maximo],"dados2012":[20,20],"valorFinal2008":[]},
   {"title":"outros","nextlevel":"votos__estados_outros",        "dados2008":[,,valor_maximo],"dados2012":[20,20],"valorFinal2008":[]}
 ]
 
