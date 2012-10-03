@@ -1,10 +1,10 @@
-var width = 958,
+var width = 956,
     height = 510,
     maxHeight = 510,
     maxSvgHeight = 470, //retirados 40px das abas
     margin = {top: 5, right: 30, bottom: 20, left: 1}
 
-var barWidth = 958,
+var barWidth = 956,
     barHeight = 46,
     barMargin = {top: 2, right: 5, bottom: 20, left: 23};
 
