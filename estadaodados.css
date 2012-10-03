@@ -9,7 +9,7 @@ body {
 }
 
 #estadaoDadosMainFrame {
-    width: 958px;
+    width: 956px;
     max-height: 510px;
     height: auto;
     display: block;
@@ -32,7 +32,7 @@ body {
 #estadaoDadosMainFrame div.conteudo #svgEstadaoDados,
 #estadaoDadosMainFrame div.conteudo #svgEstadaoDados #prefeitos_partidos {
     max-height: 470px;
-    width: 958px;
+    width: 956px;
     height: auto;
 }
 
