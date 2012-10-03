@@ -1,8 +1,10 @@
-var width = 980,
-    height = 400,
+var width = 958,
+    height = 510,
+    maxHeight = 510,
+    maxSvgHeight = 470, //retirados 40px das abas
     margin = {top: 5, right: 30, bottom: 20, left: 1}
 
-var barWidth = 980,
+var barWidth = 958,
     barHeight = 46,
     barMargin = {top: 2, right: 5, bottom: 20, left: 23};
 
@@ -28,6 +30,16 @@ function geraGrafico(nomeJson) {
                     chart.width(barWidth)
                     chart.margin(barMargin)
 
+                function calculaAlturaSVG(barras){
+                    var altura = 43 //Tamanhho da última barra com o exio X
+                    for (var i=0; i<barras ; i++)
+                        altura += 24;
+                    
+                    if (altura > maxSvgHeight)
+                        return maxSvgHeight
+                    else
+                        return altura
+                }
 
                 var svg = d3.select('#svgEstadaoDados')
                           .attr("height", 0)
@@ -35,7 +47,7 @@ function geraGrafico(nomeJson) {
                 
                 svg.transition()
                         .duration(duracao)
-                        .attr("height",height)
+                        .attr("height",function() { return calculaAlturaSVG(data.length)+'px';})
                 //*
                 if (!d3.select("#retornaBackground")[0][0]) {
                     svg.append("rect")
@@ -47,8 +59,9 @@ function geraGrafico(nomeJson) {
                         .on("click",voltaGrafico)
                 }
                 //*/
+                
                 base = svg.append("g")
-                        .attr("height", height)
+                        .attr("height", function() { return calculaAlturaSVG(data.length)+'px';})
                         .attr("width", width)
                         .attr("id", nomeJson)
                     

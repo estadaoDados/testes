@@ -4,10 +4,19 @@
 }
 
 #estadaoDadosMainFrame {
-    width: 980px;
-    height: 510px;
+    width: 958px;
+    max-height: 510px;
+    height: auto;
     display: block;
     font-family: "Georgia", "Times New Roman", Times, serif;;
+}
+
+#estadaoDadosMainFrame div.conteudo,
+#estadaoDadosMainFrame div.conteudo #svgEstadaoDados,
+#estadaoDadosMainFrame div.conteudo #svgEstadaoDados #prefeitos_partidos {
+    max-height: 470px;
+    width: 958px;
+    height: auto;
 }
 
 #estadaoDadosMainFrame div.conteudo {
@@ -278,8 +287,6 @@ svg {
   user-select: none;
   /* Trying to get SVG to act like a greedy block in all browsers */
   display: block;
-  width:100%;
-  height:100%;
 }
 
 
