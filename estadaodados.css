@@ -17,9 +17,10 @@ body {
     margin-left: 1px;
 }
 
-#estadaoDadosMainFrame .titulo {
+#estadaoDadosMainFrame #titulo {
     font-weight: bold;
-    text-transform: uppercase;
+    font: bold 15px/28px arial;
+    padding-left: 10px;
 }
 
 #estadaoDadosMainFrame .linhafina {
@@ -30,19 +31,9 @@ body {
     height: 1px;
 }
 
-
-
-#estadaoDadosMainFrame #letreiro {
-    font: bold 14px/35px arial; 
-    position: absolute;
-    right: 1px; 
-    top: 40px;
-}
-
 #estadaoDadosMainFrame #origemDados {
-    text-transform: uppercase;
+    font: bold 14px/35px arial; 
 }
-
 
 /* Acessórios */
 #alertar {
@@ -75,7 +66,7 @@ body {
 /* ABAS */
 #estadaoDadosAbas {
     position: relative;
-    height: 34px;
+    height: 30px;
     background: url('http://estadao.com.br/estadao/v2012/img/sprite_bg.png') repeat-x 0 -84px;
 }
 
@@ -91,12 +82,12 @@ body {
 
 #estadaoDadosAbas li a {
     display: block;
-    height: 32px;
+    height: 30px;
     margin: 0 2px 0 0;
     padding: 0 10px;
     vertical-align: middle;
     text-align: center;
-    font: bold 14px/35px arial; 
+    font: normal 14px/35px arial; 
     color: #999;
     background: #F4F4F4;
     cursor:auto;
@@ -111,12 +102,12 @@ body {
 
 #estadaoDadosAbas li a.selected,
 #estadaoDadosAbas li a.selected:hover {
-    height: 32px;
+    height: 30px;
     margin: 0;
+    font-weight: bold;
     line-height: 32px;
-    color: #005E8E;
-    border-left: 1px solid #DFDFDF;
-    border-right: 1px solid #DFDFDF;
+    color: #FF5900;
+    opacity: 0.6;
     background: white;
     text-decoration: none;
     cursor:auto;
@@ -698,25 +689,22 @@ svg .title {
 /**********
 *  Bullet
 */
+.nvd3.nv-bullet .nv-markerLine { stroke: #E80000; fill: none; stroke-width: 2; opacity:1;}
+.nv-tick { font-size: 10px !important; }
+.nv-title { font-size: 11px; font-weight: bold; }
 
 .nvd3.nv-bullet { font: 10px sans-serif; cursor: pointer; }
 .nvd3.nv-bullet rect { fill-opacity: .6; }
 .nvd3.nv-bullet rect:hover { fill-opacity: 1; }
 .nvd3.nv-bullet .nv-marker { stroke: #000; stroke-width: 2px; }
-.nvd3.nv-bullet .nv-markerLine { stroke: #E80000; fill: none; stroke-width: 2; opacity:1;}
 .nvd3.nv-bullet .nv-markerTriangle { stroke: #000; fill: #fff; stroke-width: 1.5px; }
 .nvd3.nv-bullet .nv-tick line { stroke: #666; stroke-width: .5px; }
-.nvd3.nv-bullet .nv-tick { font-size: 9px !important; }
 .nvd3.nv-bullet .nv-range.nv-s0 { fill: #fff;}/* { fill: #eee; }*/ 
 .nvd3.nv-bullet .nv-range.nv-s1 { fill: #888;}/* { fill: #ddd; }*/ 
 .nvd3.nv-bullet .nv-range.nv-s2 { fill: #eee;}/* { fill: #ccc; }*/ 
-.nvd3.nv-bullet .nv-measure.nv-s0 { fill: #732800; }
+.nvd3.nv-bullet .nv-measure.nv-s0 { fill: #A83000; }/* #732800; } */
 .nvd3.nv-bullet .nv-measure.nv-s1 { fill: #FF5900; }
-.nvd3.nv-bullet .nv-title { font-size: 14px; font-weight: bold; }
 .nvd3.nv-bullet .nv-subtitle { fill: #999; }
-
-
-
 
 /**********
 * Sparkline

@@ -86,16 +86,26 @@ function geraGrafico(nomeJson) {
 
 //Função que faz transição entre dois gráficos
 function novoGrafico(novoJson){
-    nv.log("novoGrafico():")
-    nv.log("    GraficoAtual: "+ jsonAtual)
-    nv.log("    NovoGrafico: "+ novoJson)
     if (!erroEncontrado){
-
-        if (novoJson.indexOf("partidos") != -1) {
-            $("#origemDados").text("Brasil")
+        
+        if (projecao=="votos") {
+            if (novoJson.indexOf("partidos") != -1) {
+                $("#origemDados").text("Veja quantos votos para prefeito cada partido recebeu em 2012 e compare com 2008")
+            } else {
+                $("#origemDados").text('Veja quantos votos o ' + novoJson.split("_")[1].toUpperCase() + ' recebeu para prefeito em 2012 e compare com 2008')
+            }
+        } else if (projecao=="eleitorado") {
+           if (novoJson.indexOf("partidos") != -1) {
+                $("#origemDados").text("Veja o eleitorado que cada partido irá governar em 2012 e compare com 2008")
+            } else {
+                $("#origemDados").text('Veja o eleitorado que o ' + novoJson.split("_")[1].toUpperCase() + ' irá governar em 2012 e compare com 2008')
+            } 
         } else {
-            nv.log(novoJson.split("_")[1])
-            $("#origemDados").text(novoJson.split("_")[1])
+            if (novoJson.indexOf("partidos") != -1) {
+                $("#origemDados").text("Veja quantos prefeitos cada partido elegeu em 2012 e compare com 2008")
+            } else {
+                $("#origemDados").text('Veja quantos prefeitos o ' + novoJson.split("_")[1].toUpperCase() + ' elegeu em 2012 e compare com 2008')
+            }        
         }
         //Efeito de redução do gráfico atual
         d3.selectAll(".nv-measure")
@@ -131,17 +141,13 @@ function novoGrafico(novoJson){
 }
 
 function avancaGrafico(d){//(novoJson) {
-    nv.log(d.title)
     pilhaJson.push(jsonAtual)
-    nv.log(pilhaJson)
-    nv.log("avancaGrafico(): Avançando gráfico para " + d.title + "_estados")
     novoGrafico(d.nextlevel)
 }
 
 function voltaGrafico(){
     if (pilhaJson.length) {
         var novoJson = pilhaJson.pop()
-        nv.log("voltaGrafico(): Voltando gráfico de " + jsonAtual + " para " + novoJson)
         novoGrafico(novoJson)
     } else {
         nv.log("voltaGrafico(): Pilha vazia")
@@ -161,11 +167,11 @@ function esconderAlerta() {
 
 //Funçào que identifica clique nas abas
 $("#estadaoDadosAbas li").click( function() {
+    esconderAlerta()
     projecao = this.firstChild.id    
     $("#estadaoDadosAbas a.selected").removeClass("selected")
     $(this.firstChild).addClass("selected")
     pilhaJson.length = 0
-    esconderAlerta()
     $("#estadaoDadosAbas  #origemDados").text("Brasil")
     novoGrafico(projecao+"_partidos")
 })
