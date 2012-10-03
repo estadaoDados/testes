@@ -79,7 +79,7 @@ body {
     vertical-align: middle;
     text-align: center;
     font: bold 14px/35px arial; 
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     color: #999;
     background: #F4F4F4;
     cursor:auto;
