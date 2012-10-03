@@ -30,9 +30,10 @@ body {
 }
 #estadaoDadosMainFrame #letreiro{
     /* float:right; */
+    font: bold 14px/35px arial; 
     position: absolute;
     right: 1px; 
-    top: 53px;
+    top: 45px;
 }
 
 #estadaoDadosMainFrame #origemDados {
@@ -73,7 +74,7 @@ body {
 #estadaoDadosAbas li a {
     display: block;
     height: 35px;
-    margin: 4px 0 0 0;
+    margin: 4px 2px 0 0;
     padding: 0 10px;
     vertical-align: middle;
     text-align: center;
