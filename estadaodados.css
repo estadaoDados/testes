@@ -17,44 +17,62 @@ body {
     margin-left: 1px;
 }
 
-#estadaoDadosMainFrame .titulo{
+#estadaoDadosMainFrame .titulo {
     font-weight: bold;
     text-transform: uppercase;
 }
 
-#estadaoDadosMainFrame .linhafina{
+#estadaoDadosMainFrame .linhafina {
     color: lightGrey;
     background: lightGrey;
     border: 0;
+    width: 90%;
     height: 1px;
 }
-#estadaoDadosMainFrame #letreiro{
-    /* float:right; */
+
+
+
+#estadaoDadosMainFrame #letreiro {
     font: bold 14px/35px arial; 
     position: absolute;
     right: 1px; 
-    top: 45px;
+    top: 48px;
 }
 
 #estadaoDadosMainFrame #origemDados {
     text-transform: uppercase;
 }
 
-#estadaoDadosMainFrame div.conteudo,
-#estadaoDadosMainFrame div.conteudo #svgEstadaoDados,
-#estadaoDadosMainFrame div.conteudo #svgEstadaoDados #prefeitos_partidos {
-    max-height: 470px;
-    width: 956px;
-    height: auto;
+
+/* Acessórios */
+#alertar {
+    display: none;
+    text-align:center;
+    height:75px;
+    width:150px;
+    position:absolute;
+    margin-left:400px;
+    top:300px;
+    background:lightgrey;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    border:2px solid gray;
+    font-size:1.3em;
+    padding:30px;
+    color:gray;
+    z-index: 9999;
 }
 
-#estadaoDadosMainFrame div.conteudo {
-    padding: 0 !important;
-    margin: 0 !important;
-    border: 1px solid #DFDFDF;
-    border-top: 0;
+#fechar {
+    font-size: 0.7em;
+    font-weight: bold;
+    color: gray;
+    opacity: 0.7;
 }
 
+
+/* ABAS */
 #estadaoDadosAbas {
     position: relative;
     height: 40px;
@@ -106,31 +124,24 @@ body {
     cursor:auto;
 }
 
-#alertar {
-    display: none;
-    text-align:center;
-    height:75px;
-    width:150px;
-    position:absolute;
-    margin-left:400px;
-    top:300px;
-    background:lightgrey;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-    border:2px solid gray;
-    font-size:1.3em;
-    padding:30px;
-    color:gray;
-    z-index: 9999;
+
+/* CONTEUDO SVG */
+#estadaoDadosMainFrame div.conteudo,
+#estadaoDadosMainFrame div.conteudo #svgEstadaoDados,
+#estadaoDadosMainFrame div.conteudo #svgEstadaoDados #prefeitos_partidos {
+    max-height: 470px;
+    width: 956px;
+    height: auto;
 }
 
-#fechar {
-    font-size: 0.7em;
-    font-weight: bold;
-    color: gray;
-    opacity: 0.7;
+#estadaoDadosMainFrame div.conteudo {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 1px solid #DFDFDF;
+    border-top: 0;
 }
+
+/* LEGENDA DO GRÁFICO */
 
 .nvtooltip table {
     text-align:center;
@@ -147,18 +158,6 @@ body {
     margin: 0;
     padding: 10px;
     border:none;
-    /*-moz-border-radius: 6px 6px 0 0;
-    -webkit-border-radius: 6px 6px 0 0;
-    border-radius: 6px 6px 0 0; 
-    border-left: 1px solid #CCC;
-    border-top: 1px solid #CCC;
-    border: solid #ccc 1px;
-    /*-moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    -webkit-box-shadow: 0 1px 1px #ccc; 
-    -moz-box-shadow: 0 1px 1px #ccc; 
-    box-shadow: 0 1px 1px #ccc;    */ 
 }
 
 .nvtooltip tr:hover {
@@ -177,13 +176,6 @@ body {
 }
 
 .nvtooltip thead th {
-    /*background: #DCE9F9;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#dce9f9), to(#fefbfb));
-    background-image: -webkit-linear-gradient(top, #dce9f9, #fefbfb);
-    background-image: -moz-linear-gradient(top, #dce9f9, #fefbfb);
-    background-image: -ms-linear-gradient(top, #dce9f9, #fefbfb);
-    background-image: -o-linear-gradient(top, #dce9f9, #fefbfb);
-    background-image: linear-gradient(top, #dce9f9, #fefbfb);*/
     -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
     -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
     box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
@@ -214,6 +206,13 @@ body {
     font-weight: bold;   
     font-size: 1.1em;
 }
+
+
+
+
+
+
+
 
 .bullet { font: 10px sans-serif; }
 .bullet .marker { stroke: #000; stroke-width: 2px; }
