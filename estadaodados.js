@@ -1,7 +1,7 @@
 var width = 956,
     height = 510,
     maxHeight = 510,
-    maxSvgHeight = 470, //retirados 40px das abas
+    maxSvgHeight = 434, //retirados 40px das abas e 18px do titulo e 17 linha fina
     margin = {top: 5, right: 30, bottom: 20, left: 1}
 
 var barWidth = 956,
@@ -90,6 +90,13 @@ function novoGrafico(novoJson){
     nv.log("    GraficoAtual: "+ jsonAtual)
     nv.log("    NovoGrafico: "+ novoJson)
     if (!erroEncontrado){
+
+        if (novoJson.indexOf("partidos") != -1) {
+            $("#origemDados").text("Brasil")
+        } else {
+            nv.log(novoJson.split("_")[1])
+            $("#origemDados").text(novoJson.split("_")[1])
+        }
         //Efeito de redução do gráfico atual
         d3.selectAll(".nv-measure")
             .transition()
@@ -154,10 +161,12 @@ function esconderAlerta() {
 
 //Funçào que identifica clique nas abas
 $("#estadaoDadosAbas li").click( function() {
-    projecao = this.firstChild.text.toLowerCase()    
+    projecao = this.firstChild.id    
     $("#estadaoDadosAbas a.selected").removeClass("selected")
     $(this.firstChild).addClass("selected")
     pilhaJson.length = 0
+    esconderAlerta()
+    $("#estadaoDadosAbas  #origemDados").text("Brasil")
     novoGrafico(projecao+"_partidos")
 })
 

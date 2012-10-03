@@ -30,17 +30,19 @@
     </head>
   <body>
         <section id="estadaoDadosMainFrame">
+            <div style="position:absolute;">
             <div id="alertar" onClick="esconderAlerta()"></div>
-            <div id="titulo">TITULO DO GRAFICO</div>
+            <div id="titulo">Veja quantos prefeitos cada partido elegeu em 2012 e compare com 2008</div>
             <hr class="linhafina">
             <nav id="estadaoDadosAbas">
                 <ul>
-                    <li><a class="selected" href="#" >prefeitos</a></li>
-                    <li><a href="#" >votos</a></li>
-                    <li><a href="#" >eleitorado</a></li>
+                    <li><a class="selected" href="#" id="prefeitos">número de prefeitos</a></li>
+                    <li><a href="#" id="votos">votos recebidos para prefeitos</a></li>
+                    <li><a href="#" id="eleitorado">eleitorado a governar</a></li>
                 </ul>
             </nav>
-            <div class="conteudo"><svg id="svgEstadaoDados"></svg></div>
+            <div id="letreiro">Consolidado <span id="origemDados">Brasil</span></div>
+            <div class="conteudo"><svg id="svgEstadaoDados"></svg></div></div>
         </section>
         <script type="text/javascript" src="estadaodados.js"></script>
         <!--input type="button" onClick="avancaGrafico('pmdb')" name="botao" value="botao"/-->

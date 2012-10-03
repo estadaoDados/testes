@@ -14,6 +14,7 @@ body {
     height: auto;
     display: block;
     font-family: arial;
+    margin-left: 1px;
 }
 
 #estadaoDadosMainFrame .titulo{
@@ -27,6 +28,16 @@ body {
     border: 0;
     height: 1px;
 }
+#estadaoDadosMainFrame #letreiro{
+    /* float:right; */
+    position: absolute;
+    right: 1px; 
+    top: 53px;
+}
+
+#estadaoDadosMainFrame #origemDados {
+    text-transform: uppercase;
+}
 
 #estadaoDadosMainFrame div.conteudo,
 #estadaoDadosMainFrame div.conteudo #svgEstadaoDados,
@@ -37,8 +48,8 @@ body {
 }
 
 #estadaoDadosMainFrame div.conteudo {
-    padding: 5px 5px 0 5px;
-    margin: 0 0 5px 0;
+    padding: 0 !important;
+    margin: 0 !important;
     border: 1px solid #DFDFDF;
     border-top: 0;
 }
