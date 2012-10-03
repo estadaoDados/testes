@@ -7,6 +7,7 @@
     width: 980px;
     height: 510px;
     display: block;
+    font-family: "Georgia", "Times New Roman", Times, serif;;
 }
 
 #estadaoDadosMainFrame div.conteudo {
@@ -91,6 +92,89 @@
     font-weight: bold;
     color: gray;
     opacity: 0.7;
+}
+
+.nvtooltip table {
+    text-align:center;
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;
+    border:none;
+}
+
+.nvtooltip caption {
+    font-weight: bold;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    border:none;
+    /*-moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0; 
+    border-left: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+    border: solid #ccc 1px;
+    /*-moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc; 
+    -moz-box-shadow: 0 1px 1px #ccc; 
+    box-shadow: 0 1px 1px #ccc;    */ 
+}
+
+.nvtooltip tr:hover {
+    background: #fbf8e9;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;     
+} 
+
+.nvtooltip thead th:first-child {
+    border: none;
+    background: none;
+    background-image: none;
+}
+
+.nvtooltip thead th {
+    /*background: #DCE9F9;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#dce9f9), to(#fefbfb));
+    background-image: -webkit-linear-gradient(top, #dce9f9, #fefbfb);
+    background-image: -moz-linear-gradient(top, #dce9f9, #fefbfb);
+    background-image: -ms-linear-gradient(top, #dce9f9, #fefbfb);
+    background-image: -o-linear-gradient(top, #dce9f9, #fefbfb);
+    background-image: linear-gradient(top, #dce9f9, #fefbfb);*/
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.nvtooltip thead th {
+    font-weight: bold;
+    text-align: center;
+    padding: 2px;
+    font-size: 1.15em;
+    margin-top: 4px;
+}
+.nvtooltip th, .nvtooltip td {
+    padding: 10px;
+    border-left: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+    border: solid #ccc 1px;
+   /* -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;*/
+    -webkit-box-shadow: 0 1px 1px #ccc; 
+    -moz-box-shadow: 0 1px 1px #ccc; 
+    box-shadow: 0 1px 1px #ccc;     
+}
+
+.nvtooltip td {
+    font-weight: bold;   
+    font-size: 1.1em;
 }
 
 .bullet { font: 10px sans-serif; }
