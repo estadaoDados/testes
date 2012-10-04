@@ -1,0 +1,16 @@
+[
+  {"title":"PMDB","nextlevel":"eleitorado_pmdb_estados",        "dados2008":[19845939,31784693],"dados2012":[1142,1161],    "valorFinal2008":[31784693]},
+  {"title":"PSDB","nextlevel":"eleitorado_psdb_estados",        "dados2008":[16048807,20164079],"dados2012":[795,820],      "valorFinal2008":[20164079]},
+  {"title":"PT","nextlevel":"eleitorado_pt_estados",            "dados2008":[16987980,32386037],"dados2012":[667,692],      "valorFinal2008":[32386037]},
+  {"title":"PP","nextlevel":"eleitorado_pp_estados",            "dados2008":[7460043 ,8347134 ],"dados2012":[537,539],      "valorFinal2008":[8347134 ]},
+  {"title":"DEM","nextlevel":"eleitorado_dem_estados",          "dados2008":[7690858 ,16229623],"dados2012":[200,200],      "valorFinal2008":[16229623]},
+  {"title":"PTB","nextlevel":"eleitorado_ptb_estados",          "dados2008":[5214434 ,8003593 ],"dados2012":[383,385],      "valorFinal2008":[8003593 ]},
+  {"title":"PR","nextlevel":"eleitorado_pr_estados",            "dados2008":[5605982 ,6246448 ],"dados2012":[355,355],      "valorFinal2008":[6246448 ]},
+  {"title":"PDT","nextlevel":"eleitorado_pdt_estados",          "dados2008":[7980715 ,8522795 ],"dados2012":[131,131],      "valorFinal2008":[8522795 ]},
+  {"title":"PSB","nextlevel":"eleitorado_psb_estados",          "dados2008":[5567306 ,9398629 ],"dados2012":[440,447],      "valorFinal2008":[9398629 ]},
+  {"title":"PSD","nextlevel":"eleitorado_psd_estados",          "dados2008":[0       ,0       ],"dados2012":[530,539],      "valorFinal2008":[0       ]},
+  {"title":"PPS","nextlevel":"eleitorado_pps_estados",          "dados2008":[1989163 ,2425085 ],"dados2012":[130,130],      "valorFinal2008":[2425085 ]},
+  {"title":"PV","nextlevel":"eleitorado_pv_estados",            "dados2008":[2099555 ,6678920 ],"dados2012":[95,95],        "valorFinal2008":[6678920 ]},
+  {"title":"PSC","nextlevel":"eleitorado_psc_estados",          "dados2008":[1113528 ,1113528 ],"dados2012":[76,76],        "valorFinal2008":[1113528 ]},
+  {"title":"Outros","nextlevel":"eleitorado_partidos_outros",   "dados2008":[3963179 ,4600093 ],"dados2012":[301,301],      "valorFinal2008":[4600093 ]}
+]
