@@ -64,7 +64,7 @@ function geraGrafico(nomeJson) {
                         .attr("height", function() { return calculaAlturaSVG(data.length)+'px';})
                         .attr("width", width)
                         .attr("id", nomeJson)
-                    
+                
                 base.selectAll("svg")
                         .data(data)
                     .enter()
