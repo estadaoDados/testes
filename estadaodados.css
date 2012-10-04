@@ -141,8 +141,7 @@ body {
 
 .nvtooltip caption {
     font-weight: bold;
-    font-size: 1.4em;
-    text-transform: uppercase;
+    font-size: 1.2em;
     text-align: center;
     margin: 0;
     padding: 10px;
@@ -159,48 +158,45 @@ body {
 } 
 
 .nvtooltip thead th:first-child {
-    border: none;
+    border-bottom: 1px solid #CCC;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
     background: none;
     background-image: none;
 }
 
 .nvtooltip thead th {
-    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
-    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
-    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
-}
-
-.nvtooltip thead th {
-    font-weight: bold;
+    font-weight: normal;
     text-align: center;
     padding: 2px;
-    font-size: 1.15em;
+    font-size: 1em;
     margin-top: 4px;
-}
-.nvtooltip th, .nvtooltip td {
-    padding: 10px;
-    border-left: 1px solid #CCC;
     border-top: 1px solid #CCC;
-    border: solid #ccc 1px;
-   /* -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;*/
-    -webkit-box-shadow: 0 1px 1px #ccc; 
-    -moz-box-shadow: 0 1px 1px #ccc; 
-    box-shadow: 0 1px 1px #ccc;     
+    border-bottom: 1px solid #CCC;
+    border-left: 0px; /* 1px solid #CCC; */
+    border-right: 0px;
+}
+
+.nvtooltip th {
+    padding: 10px;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    border-left: 0px; /* 1px solid #CCC; */
+    border-right: 0px;
+    font-weight: normal;
+    font-size: 1em;
 }
 
 .nvtooltip td {
+    padding: 10px;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    border-left: 0px; /* 1px solid #CCC; */
+    border-right: 0px;
     font-weight: bold;   
     font-size: 1.1em;
 }
-
-
-
-
-
-
 
 
 .bullet { font: 10px sans-serif; }
@@ -699,8 +695,8 @@ svg .title {
 .nvd3.nv-bullet .nv-marker { stroke: #000; stroke-width: 2px; }
 .nvd3.nv-bullet .nv-markerTriangle { stroke: #000; fill: #fff; stroke-width: 1.5px; }
 .nvd3.nv-bullet .nv-tick line { stroke: #666; stroke-width: .5px; }
-.nvd3.nv-bullet .nv-range.nv-s0 { fill: #fff;}/* { fill: #eee; }*/ 
-.nvd3.nv-bullet .nv-range.nv-s1 { fill: #888;}/* { fill: #ddd; }*/ 
+.nvd3.nv-bullet .nv-range.nv-s0 { fill: #888;}/* { fill: #eee; }*/ 
+.nvd3.nv-bullet .nv-range.nv-s1 { fill: #eee;}/* { fill: #ddd; }*/ 
 .nvd3.nv-bullet .nv-range.nv-s2 { fill: #eee;}/* { fill: #ccc; }*/ 
 .nvd3.nv-bullet .nv-measure.nv-s0 { fill: #A83000; }/* #732800; } */
 .nvd3.nv-bullet .nv-measure.nv-s1 { fill: #FF5900; }
