@@ -5,7 +5,7 @@ var width = 956,
     margin = {top: 5, right: 30, bottom: 20, left: 1}
 
 var barWidth = 956,
-    barHeight = 46,
+    barHeight = 44,
     barMargin = {top: 2, right: 5, bottom: 20, left: 23};
 
 var duracao = 1250,
