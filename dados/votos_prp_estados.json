@@ -1,0 +1,16 @@
+[
+  {"title":"SP","nextlevel":"prefeitos_partidos",                       "dados2008":[25604,25604],"dados2012":[20,20],"valorFinal2008":[25604]},
+  {"title":"MG","nextlevel":"prefeitos_partidos",                       "dados2008":[6346 ,6346 ],"dados2012":[20,20],"valorFinal2008":[6346 ]},
+  {"title":"RJ","nextlevel":"prefeitos_partidos",                       "dados2008":[201  ,201  ],"dados2012":[20,20],"valorFinal2008":[201  ]},
+  {"title":"BA","nextlevel":"prefeitos_partidos",                       "dados2008":[54449,54449],"dados2012":[20,20],"valorFinal2008":[54449]},
+  {"title":"RS","nextlevel":"prefeitos_partidos",                       "dados2008":[0    ,0    ],"dados2012":[20,20],"valorFinal2008":[0    ]},
+  {"title":"PR","nextlevel":"prefeitos_partidos",                       "dados2008":[22366,22366],"dados2012":[20,20],"valorFinal2008":[22366]},
+  {"title":"PE","nextlevel":"prefeitos_partidos",                       "dados2008":[2047 ,2047 ],"dados2012":[20,20],"valorFinal2008":[2047 ]},
+  {"title":"CE","nextlevel":"prefeitos_partidos",                       "dados2008":[22008,22008],"dados2012":[20,20],"valorFinal2008":[22008]},
+  {"title":"PA","nextlevel":"prefeitos_partidos",                       "dados2008":[16834,16834],"dados2012":[20,20],"valorFinal2008":[16834]},
+  {"title":"SC","nextlevel":"prefeitos_partidos",                       "dados2008":[0    ,0    ],"dados2012":[20,20],"valorFinal2008":[0    ]},
+  {"title":"MA","nextlevel":"prefeitos_partidos",                       "dados2008":[15023,15023],"dados2012":[20,20],"valorFinal2008":[15023]},
+  {"title":"GO","nextlevel":"prefeitos_partidos",                       "dados2008":[5579 ,5579 ],"dados2012":[20,20],"valorFinal2008":[5579 ]},
+  {"title":"PB","nextlevel":"prefeitos_partidos",                       "dados2008":[7754 ,7754 ],"dados2012":[20,20],"valorFinal2008":[7754 ]},
+  {"title":"outros","nextlevel":"prefeitos_prp_estados_outros",         	"dados2008":[12491,12491],"dados2012":[20,20],"valorFinal2008":[12491]}
+]

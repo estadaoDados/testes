@@ -1,0 +1,16 @@
+[
+  {"title":"SP","nextlevel":"prefeitos_partidos",                       "dados2008":[8724 ,8724 ],"dados2012":[20,20],"valorFinal2008":[8724 ]},
+  {"title":"MG","nextlevel":"prefeitos_partidos",                       "dados2008":[18532,18532],"dados2012":[20,20],"valorFinal2008":[18532]},
+  {"title":"RJ","nextlevel":"prefeitos_partidos",                       "dados2008":[52090,52090],"dados2012":[20,20],"valorFinal2008":[52090]},
+  {"title":"BA","nextlevel":"prefeitos_partidos",                       "dados2008":[39843,39843],"dados2012":[20,20],"valorFinal2008":[39843]},
+  {"title":"RS","nextlevel":"prefeitos_partidos",                       "dados2008":[0    ,0    ],"dados2012":[20,20],"valorFinal2008":[0    ]},
+  {"title":"PR","nextlevel":"prefeitos_partidos",                       "dados2008":[8807 ,8807 ],"dados2012":[20,20],"valorFinal2008":[8807 ]},
+  {"title":"PE","nextlevel":"prefeitos_partidos",                       "dados2008":[766  ,766  ],"dados2012":[20,20],"valorFinal2008":[766  ]},
+  {"title":"CE","nextlevel":"prefeitos_partidos",                       "dados2008":[699  ,699  ],"dados2012":[20,20],"valorFinal2008":[699  ]},
+  {"title":"PA","nextlevel":"prefeitos_partidos",                       "dados2008":[630  ,630  ],"dados2012":[20,20],"valorFinal2008":[630  ]},
+  {"title":"SC","nextlevel":"prefeitos_partidos",                       "dados2008":[0    ,0    ],"dados2012":[20,20],"valorFinal2008":[0    ]},
+  {"title":"MA","nextlevel":"prefeitos_partidos",                       "dados2008":[1713 ,1713 ],"dados2012":[20,20],"valorFinal2008":[1713 ]},
+  {"title":"GO","nextlevel":"prefeitos_partidos",                       "dados2008":[18484,18484],"dados2012":[20,20],"valorFinal2008":[18484]},
+  {"title":"PB","nextlevel":"prefeitos_partidos",                       "dados2008":[0    ,0    ],"dados2012":[20,20],"valorFinal2008":[0    ]},
+  {"title":"outros","nextlevel":"prefeitos_ptdob_estados_outros",         	"dados2008":[66660,66660],"dados2012":[20,20],"valorFinal2008":[66660]}
+]

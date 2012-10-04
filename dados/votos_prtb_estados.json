@@ -1,0 +1,16 @@
+[
+  {"title":"SP","nextlevel":"prefeitos_partidos",                       "dados2008":[7186 ,7186 ],"dados2012":[20,20],"valorFinal2008":[7186 ]},
+  {"title":"MG","nextlevel":"prefeitos_partidos",                       "dados2008":[21503,21503],"dados2012":[20,20],"valorFinal2008":[21503]},
+  {"title":"RJ","nextlevel":"prefeitos_partidos",                       "dados2008":[11081,11081],"dados2012":[20,20],"valorFinal2008":[11081]},
+  {"title":"BA","nextlevel":"prefeitos_partidos",                       "dados2008":[39283,39283],"dados2012":[20,20],"valorFinal2008":[39283]},
+  {"title":"RS","nextlevel":"prefeitos_partidos",                       "dados2008":[341  ,341  ],"dados2012":[20,20],"valorFinal2008":[341  ]},
+  {"title":"PR","nextlevel":"prefeitos_partidos",                       "dados2008":[11351,11351],"dados2012":[20,20],"valorFinal2008":[11351]},
+  {"title":"PE","nextlevel":"prefeitos_partidos",                       "dados2008":[1510 ,1510 ],"dados2012":[20,20],"valorFinal2008":[1510 ]},
+  {"title":"CE","nextlevel":"prefeitos_partidos",                       "dados2008":[10545,10545],"dados2012":[20,20],"valorFinal2008":[10545]},
+  {"title":"PA","nextlevel":"prefeitos_partidos",                       "dados2008":[0    ,0    ],"dados2012":[20,20],"valorFinal2008":[0    ]},
+  {"title":"SC","nextlevel":"prefeitos_partidos",                       "dados2008":[0    ,0    ],"dados2012":[20,20],"valorFinal2008":[0    ]},
+  {"title":"MA","nextlevel":"prefeitos_partidos",                       "dados2008":[26049,26049],"dados2012":[20,20],"valorFinal2008":[26049]},
+  {"title":"GO","nextlevel":"prefeitos_partidos",                       "dados2008":[4912 ,4912 ],"dados2012":[20,20],"valorFinal2008":[4912 ]},
+  {"title":"PB","nextlevel":"prefeitos_partidos",                       "dados2008":[0    ,0    ],"dados2012":[20,20],"valorFinal2008":[0    ]},
+  {"title":"outros","nextlevel":"prefeitos_prtb_estados_outros",         	"dados2008":[63625,63625],"dados2012":[20,20],"valorFinal2008":[63625]}
+]

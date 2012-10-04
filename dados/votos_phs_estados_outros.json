@@ -1,0 +1,15 @@
+[
+  {"title":"ES","nextlevel":"prefeitos_partidos",                       "dados2008":[120   ,120   ],"dados2012":[20,20],"valorFinal2008":[120   ]},
+  {"title":"PI","nextlevel":"prefeitos_partidos",                       "dados2008":[239   ,239   ],"dados2012":[20,20],"valorFinal2008":[239   ]},
+  {"title":"RN","nextlevel":"prefeitos_partidos",                       "dados2008":[4953  ,4953  ],"dados2012":[20,20],"valorFinal2008":[4953  ]},
+  {"title":"MT","nextlevel":"prefeitos_partidos",                       "dados2008":[0     ,0     ],"dados2012":[20,20],"valorFinal2008":[0     ]},
+  {"title":"AL","nextlevel":"prefeitos_partidos",			"dados2008":[1451  ,1451  ],"dados2012":[20,20],"valorFinal2008":[1451  ]},
+  {"title":"AM","nextlevel":"prefeitos_partidos",			"dados2008":[12364 ,12364 ],"dados2012":[20,20],"valorFinal2008":[12364 ]},
+  {"title":"MS","nextlevel":"prefeitos_partidos",			"dados2008":[0     ,0     ],"dados2012":[20,20],"valorFinal2008":[0     ]},
+  {"title":"SE","nextlevel":"prefeitos_partidos",			"dados2008":[0     ,0     ],"dados2012":[20,20],"valorFinal2008":[0     ]},
+  {"title":"RO","nextlevel":"prefeitos_partidos",			"dados2008":[0     ,0     ],"dados2012":[20,20],"valorFinal2008":[0     ]},
+  {"title":"TO","nextlevel":"prefeitos_partidos",			"dados2008":[43    ,43    ],"dados2012":[20,20],"valorFinal2008":[43    ]},
+  {"title":"AC","nextlevel":"prefeitos_partidos",			"dados2008":[0     ,0     ],"dados2012":[20,20],"valorFinal2008":[0     ]},
+  {"title":"AP","nextlevel":"prefeitos_partidos",			"dados2008":[0     ,0     ],"dados2012":[20,20],"valorFinal2008":[0     ]},
+  {"title":"RR","nextlevel":"prefeitos_partidos",			"dados2008":[83    ,83    ],"dados2012":[20,20],"valorFinal2008":[83    ]}
+]
