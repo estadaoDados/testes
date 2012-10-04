@@ -188,6 +188,31 @@ body {
     font-size: 1em;
 }
 
+/* Background color das legendas seguindo as cores das barras */
+/* 1 turno 2008 */
+td.leg20081turno {
+    background: rgba(238,238,238,0.4);
+}
+
+/* 1 turno 2012 */
+td.leg20121turno {
+    background: rgba(255,89,0,0.4);
+}
+
+/* Final 2 turno 2008 */
+td.leg20082turno {
+    background: rgba(136,136,136,0.4);
+}
+
+/* Final 2 turno 2012 */
+td.leg20122turno {
+    background: rgba(168,48,0,0.4);
+}
+
+td.leg2008final {
+    background: rgba(232,0,0,1);
+}
+
 .nvtooltip td {
     padding: 10px;
     border-top: 1px solid #CCC;
@@ -250,8 +275,8 @@ body {
   -webkit-box-shadow: 4px 4px 8px rgba(0,0,0,.5);
   box-shadow: 4px 4px 8px rgba(0,0,0,.5);
 
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
 
   pointer-events: none;
 
