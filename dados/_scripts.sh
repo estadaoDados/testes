@@ -36,7 +36,23 @@ function removeDadosExtras {
         done
 }
 
-removeDadosExtras
+function substituinextlevel {
+    ARQUIVOS_VOTOS=`ls votos_*.json`
+    ARQUIVOS_ELEITORADO=`ls eleitorado_*.json`
+    TEMPFILE="TEMPFILE.tmp"
+    for arquivo in $ARQUIVOS_VOTOS
+        do
+            sed -e 's@prefeitos@votos@g' $arquivo > $TEMPFILE
+            mv $TEMPFILE $arquivo
+        done
+    for arquivo in $ARQUIVOS_ELEITORADO
+        do
+            sed -e 's@prefeitos@eleitorado@g' $arquivo > $TEMPFILE
+            mv $TEMPFILE $arquivo
+        done
+}
+
+substituinextlevel
 
 function mudaConteudo {
     ARQUIVOS_PREFEITOS=`ls prefeitos*`
