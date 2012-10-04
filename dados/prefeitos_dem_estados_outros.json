@@ -1,4 +1,8 @@
 [
+  {"title":"ES","nextlevel":"prefeitos_partidos","dados2008":[6 ,6 ],"dados2012":[20,20],"valorFinal2008":[6 ]},
+  {"title":"PI","nextlevel":"prefeitos_partidos","dados2008":[10,10],"dados2012":[20,20],"valorFinal2008":[10]},
+  {"title":"RN","nextlevel":"prefeitos_partidos","dados2008":[17,17],"dados2012":[20,20],"valorFinal2008":[17]},
+  {"title":"MT","nextlevel":"prefeitos_partidos","dados2008":[23,23],"dados2012":[20,20],"valorFinal2008":[23]},
   {"title":"AL","nextlevel":"prefeitos_partidos","dados2008":[1 ,1 ],"dados2012":[20,20],"valorFinal2008":[1 ]},
   {"title":"AM","nextlevel":"prefeitos_partidos","dados2008":[2 ,2 ],"dados2012":[20,20],"valorFinal2008":[2 ]},
   {"title":"MS","nextlevel":"prefeitos_partidos","dados2008":[4 ,4 ],"dados2012":[20,20],"valorFinal2008":[4 ]},

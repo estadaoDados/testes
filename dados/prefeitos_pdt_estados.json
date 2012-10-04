@@ -12,9 +12,5 @@
   {"title":"MA","nextlevel":"prefeitos_partidos","dados2008":[64,64],"dados2012":[20,20],"valorFinal2008":[64]},
   {"title":"GO","nextlevel":"prefeitos_partidos","dados2008":[1 ,1 ],"dados2012":[20,20],"valorFinal2008":[1 ]},
   {"title":"PB","nextlevel":"prefeitos_partidos","dados2008":[6 ,6 ],"dados2012":[20,20],"valorFinal2008":[6 ]},
-  {"title":"ES","nextlevel":"prefeitos_partidos","dados2008":[3 ,3 ],"dados2012":[20,20],"valorFinal2008":[3 ]},
-  {"title":"PI","nextlevel":"prefeitos_partidos","dados2008":[11,11],"dados2012":[20,20],"valorFinal2008":[11]},
-  {"title":"RN","nextlevel":"prefeitos_partidos","dados2008":[7 ,7 ],"dados2012":[20,20],"valorFinal2008":[7 ]},
-  {"title":"MT","nextlevel":"prefeitos_partidos","dados2008":[4 ,4 ],"dados2012":[20,20],"valorFinal2008":[4 ]},
-  {"title":"outros","nextlevel":"prefeitos_pdt_estados_outros","dados2008":[36,36],"dados2012":[20,20],"valorFinal2008":[37]}
+  {"title":"outros","nextlevel":"prefeitos_pdt_estados_outros","dados2008":[61,62],"dados2012":[20,20],"valorFinal2008":[62]}
 ]

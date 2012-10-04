@@ -12,9 +12,5 @@
   {"title":"MA","nextlevel":"prefeitos_partidos",                   "dados2008":[1,1],"dados2012":[20,20],"valorFinal2008":[1]},
   {"title":"GO","nextlevel":"prefeitos_partidos",                   "dados2008":[0,0],"dados2012":[20,20],"valorFinal2008":[0]},
   {"title":"PB","nextlevel":"prefeitos_partidos",                   "dados2008":[1,1],"dados2012":[20,20],"valorFinal2008":[1]},
-  {"title":"ES","nextlevel":"prefeitos_partidos",                   "dados2008":[0,0],"dados2012":[20,20],"valorFinal2008":[0]},
-  {"title":"PI","nextlevel":"prefeitos_partidos",                   "dados2008":[0,0],"dados2012":[20,20],"valorFinal2008":[0]},
-  {"title":"RN","nextlevel":"prefeitos_partidos",                   "dados2008":[0,0],"dados2012":[20,20],"valorFinal2008":[0]},
-  {"title":"MT","nextlevel":"prefeitos_partidos",                   "dados2008":[0,0],"dados2012":[20,20],"valorFinal2008":[0]},
   {"title":"outros","nextlevel":"prefeitos_psl_estados_outros",     "dados2008":[0,0],"dados2012":[20,20],"valorFinal2008":[0]}
 ]
