@@ -1,11 +1,11 @@
 [
-  {"title":"AL","nextlevel":"prefeitos_partidos","dados2008":[5 ,5 ,11],"dados2012":[20,20],"valorFinal2008":[5 ]},
-  {"title":"AM","nextlevel":"prefeitos_partidos","dados2008":[1 ,2 ,11],"dados2012":[20,20],"valorFinal2008":[1 ]},
-  {"title":"MS","nextlevel":"prefeitos_partidos","dados2008":[2 ,2 ,11],"dados2012":[20,20],"valorFinal2008":[2 ]},
-  {"title":"SE","nextlevel":"prefeitos_partidos","dados2008":[11,11,11],"dados2012":[20,20],"valorFinal2008":[11]},
-  {"title":"RO","nextlevel":"prefeitos_partidos","dados2008":[3 ,3 ,11],"dados2012":[20,20],"valorFinal2008":[3 ]},
-  {"title":"TO","nextlevel":"prefeitos_partidos","dados2008":[4 ,4 ,11],"dados2012":[20,20],"valorFinal2008":[4 ]},
-  {"title":"AC","nextlevel":"prefeitos_partidos","dados2008":[1 ,1 ,11],"dados2012":[20,20],"valorFinal2008":[1 ]},
-  {"title":"AP","nextlevel":"prefeitos_partidos","dados2008":[0 ,1 ,11],"dados2012":[20,20],"valorFinal2008":[0 ]},
-  {"title":"RR","nextlevel":"prefeitos_partidos","dados2008":[1 ,1 ,11],"dados2012":[20,20],"valorFinal2008":[1 ]}
+  {"title":"AL","nextlevel":"prefeitos_partidos","dados2008":[5 ,5 ],"dados2012":[20,20],"valorFinal2008":[5 ]},
+  {"title":"AM","nextlevel":"prefeitos_partidos","dados2008":[1 ,2 ],"dados2012":[20,20],"valorFinal2008":[1 ]},
+  {"title":"MS","nextlevel":"prefeitos_partidos","dados2008":[2 ,2 ],"dados2012":[20,20],"valorFinal2008":[2 ]},
+  {"title":"SE","nextlevel":"prefeitos_partidos","dados2008":[11,11],"dados2012":[20,20],"valorFinal2008":[11]},
+  {"title":"RO","nextlevel":"prefeitos_partidos","dados2008":[3 ,3 ],"dados2012":[20,20],"valorFinal2008":[3 ]},
+  {"title":"TO","nextlevel":"prefeitos_partidos","dados2008":[4 ,4 ],"dados2012":[20,20],"valorFinal2008":[4 ]},
+  {"title":"AC","nextlevel":"prefeitos_partidos","dados2008":[1 ,1 ],"dados2012":[20,20],"valorFinal2008":[1 ]},
+  {"title":"AP","nextlevel":"prefeitos_partidos","dados2008":[0 ,1 ],"dados2012":[20,20],"valorFinal2008":[0 ]},
+  {"title":"RR","nextlevel":"prefeitos_partidos","dados2008":[1 ,1 ],"dados2012":[20,20],"valorFinal2008":[1 ]}
 ]
