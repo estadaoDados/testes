@@ -16,7 +16,6 @@ var duracao = 1250,
     mensagemErro = "",
     projecao = "prefeitos"
 
-
 //Função que gera um gráfico
 function geraGrafico(nomeJson) {
     
@@ -140,9 +139,18 @@ function novoGrafico(novoJson){
     }
 }
 
-function avancaGrafico(d){//(novoJson) {
-    pilhaJson.push(jsonAtual)
-    novoGrafico(d.nextlevel)
+function avancaGrafico(d){
+    if (pilhaJson.length) {
+        var topoDaPilha = pilhaJson.pop()
+        if (topoDaPilha!=d.nextlevel){
+            pilhaJson.push(todoDaPilha)
+            pilhaJson.push(jsonAtual)
+        }
+        novoGrafico(d.nextlevel)
+    } else {
+        pilhaJson.push(jsonAtual)
+        novoGrafico(d.nextlevel)
+    }
 }
 
 function voltaGrafico(){
