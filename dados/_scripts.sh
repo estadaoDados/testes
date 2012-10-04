@@ -26,7 +26,17 @@ function criandoPatterns {
         done
 }
 
-criandoPatterns
+function removeDadosExtras {
+    ARQUIVOS=`ls *.json`
+    TEMPFILE="TEMPFILE.tmp"
+    for arquivo in $ARQUIVOS
+        do
+        	sed -e 's@dados2008":\[\(.*\),\(.*\),\(.*\)\],"dados2012@dados2008":[\1,\2],"dados2012@g' $arquivo > $TEMPFILE
+            mv $TEMPFILE $arquivo
+        done
+}
+
+removeDadosExtras
 
 function mudaConteudo {
     ARQUIVOS_PREFEITOS=`ls prefeitos*`
