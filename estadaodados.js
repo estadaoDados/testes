@@ -184,6 +184,7 @@ function esconderAlerta() {
 }
 
 function mostraErroIE() {
+    document.getElementById("noIeErro").style.display = "none"
     document.getElementById("erroIE").style.display = "block"
 }
 
