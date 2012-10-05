@@ -31,7 +31,8 @@ function removeDadosExtras {
     TEMPFILE="TEMPFILE.tmp"
     for arquivo in $ARQUIVOS
         do
-        	sed -e 's@dados2012":\[\(.*\),\(.*\)\]\s*,\s*"valorFinal@dados2012":[0,0],"valorFinal@g' $arquivo > $TEMPFILE
+        	sed -e 's@dados2012":\[\(.*\),\(.*\)\],"valorFinal@dados2012":[0,0],"valorFinal@g' $arquivo > $TEMPFILE
+            #sed -e 's@\s*,\s*@,@g' $arquivo > $TEMPFILE
             mv $TEMPFILE $arquivo
         done
 }
