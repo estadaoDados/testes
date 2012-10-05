@@ -31,20 +31,23 @@
   <body>
         <section id="estadaoDadosMainFrame">
             <div style="position:absolute;">
-            <div id="alertar" onClick="esconderAlerta()"></div>
-            <div id="titulo"><span id="origemDados">Veja quantos prefeitos cada partido elegeu em 2012 e compare com 2008</span></div>
-            <nav id="estadaoDadosAbas">
-                <ul>
-                    <li><a class="selected" href="#" id="prefeitos">Número de prefeitos</a></li>
-                    <li><a href="#" id="votos">Votos recebidos para prefeito</a></li>
-                    <li><a href="#" id="eleitorado">Eleitorado a governar</a></li>
-                </ul>
-            </nav>
-            <div id="letreiro"></div>
-            <div class="conteudo"><svg id="svgEstadaoDados"></svg></div></div>
+                <div id="alertar" onClick="esconderAlerta()"></div>
+                <div id="titulo"><span id="origemDados">Veja quantos prefeitos cada partido elegeu em 2012 e compare com 2008</span></div>
+                <div id="legendaDeCoresMini" style="display:block;"><img src="imgs/legenda_mini.jpg"/></div>
+                <div id="legendaDeCores" style="display:none;"><img src="imgs/legenda.png"/></div>
+                <nav id="estadaoDadosAbas">
+                    <ul>
+                        <li><a class="selected" href="#" id="prefeitos">Número de prefeitos</a></li>
+                        <li><a href="#" id="votos">Votos recebidos para prefeito</a></li>
+                        <li><a href="#" id="eleitorado">Eleitorado a governar</a></li>
+                    </ul>
+                </nav>
+                <div id="letreiro"></div>
+                <div class="conteudo"><svg id="svgEstadaoDados"></svg></div>
+            </div>
+            <div id="erroIE" style="position: absolute; top:0; left:0; width: 958px; height: 510px; display:none;"><img src="imgs/erroIE.png"/></div>
         </section>
         <script type="text/javascript" src="estadaodados.js"></script>
-        <!--input type="button" onClick="avancaGrafico('pmdb')" name="botao" value="botao"/-->
   
   </body>
 </html>

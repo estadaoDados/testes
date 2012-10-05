@@ -16,6 +16,16 @@ var duracao = 1250,
     mensagemErro = "",
     projecao = "prefeitos"
 
+var Browser = {
+    Version: function() {
+        var version = 999; // we assume a sane browser
+        if (navigator.appVersion.indexOf("MSIE") != -1)
+            // bah, IE again, lets downgrade version number
+            version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+            return version;
+    }
+}
+
 //Função que gera um gráfico
 function geraGrafico(nomeJson) {
     
@@ -173,6 +183,15 @@ function esconderAlerta() {
     document.getElementById("alertar").style.display = 'none'
 }
 
+function mostraErroIE() {
+    document.getElementById("erroIE").style.display = "block"
+}
+
+if (Browser.Version() > 8) {
+    geraGrafico("prefeitos_partidos")
+} else {
+    mostraErroIE()
+}
 //Funçào que identifica clique nas abas
 $("#estadaoDadosAbas li").click( function() {
     esconderAlerta()
@@ -184,4 +203,12 @@ $("#estadaoDadosAbas li").click( function() {
     novoGrafico(projecao+"_partidos")
 })
 
-geraGrafico("prefeitos_partidos")
+$('#legendaDeCoresMini').mouseover( function() {
+    document.getElementById('legendaDeCoresMini').style.display="none"
+    document.getElementById('legendaDeCores').style.display="block"
+})
+
+$('#legendaDeCores').mouseout( function() {
+    document.getElementById('legendaDeCoresMini').style.display="block"
+    document.getElementById('legendaDeCores').style.display="none"
+})

@@ -31,8 +31,23 @@ body {
     height: 1px;
 }
 
+/* TODO: Aplicar transição */
 #estadaoDadosMainFrame #origemDados {
     font: bold 14px/35px arial; 
+}
+
+#legendaDeCoresMini {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+    z-index: 5000;
+}
+
+#legendaDeCores {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+    z-index: 3000;
 }
 
 /* Acessórios */
