@@ -203,12 +203,6 @@ $("#estadaoDadosAbas li").click( function() {
     novoGrafico(projecao+"_partidos")
 })
 
-$('#legendaDeCoresMini').mouseover( function() {
-    document.getElementById('legendaDeCoresMini').style.display="none"
-    document.getElementById('legendaDeCores').style.display="block"
-})
-
-$('#legendaDeCores').mouseout( function() {
-    document.getElementById('legendaDeCoresMini').style.display="block"
-    document.getElementById('legendaDeCores').style.display="none"
-})
+$(document).ready(function(){
+    $('#legendaDeCores').zoom();
+});

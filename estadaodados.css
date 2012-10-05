@@ -1,3 +1,23 @@
+/* optional icon style */
+.zoomIcon { 
+    width:33px; 
+    height:33px; 
+    position:absolute; 
+    top:0;
+    right:0;
+    background:url(imgs/icon.png);
+}
+.zoom {
+    display:inline-block;
+    position:relative;
+}
+
+.zoom img {
+    display: block;
+}
+
+.zoom img::selection { background-color: transparent; }
+
 body {
     margin: 0;
     padding: 0;
@@ -36,15 +56,10 @@ body {
     font: bold 14px/35px arial; 
 }
 
-#legendaDeCoresMini {
-    position: absolute;
-    right: 0px;
-    top: 2px;
-    z-index: 5000;
-}
-
 #legendaDeCores {
     position: absolute;
+    width: 350px;
+    height: 60px;
     right: 0px;
     top: 2px;
     z-index: 3000;
