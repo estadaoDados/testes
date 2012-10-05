@@ -205,4 +205,8 @@ $("#estadaoDadosAbas li").click( function() {
 
 $(document).ready(function(){
     $('#legendaDeCores').zoom();
+    if(window!=window.top)
+        $('#estadaoDadosMainFrame').mouseover(function(){
+            window.top.oReload.stop()
+        })
 });
