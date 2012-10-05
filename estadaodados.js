@@ -4,7 +4,7 @@ var width = 956,
     maxSvgHeight = 434, //retirados 40px das abas e 18px do titulo e 17 linha fina
     margin = {top: 5, right: 30, bottom: 20, left: 1}
 
-var barWidth = 956,
+var barWidth = 950,
     barHeight = 43,
     barMargin = {top: 2, right: 5, bottom: 20, left: 23};
 
@@ -168,7 +168,6 @@ function avancaGrafico(d){
         pilhaJson.push(jsonAtual)
         novoGrafico(d.nextlevel)
     }
-    nv.log(pilhaJson)
 }
 
 function voltaGrafico(){
@@ -211,7 +210,8 @@ $("#estadaoDadosAbas li").click( function() {
 })
 
 $(document).ready(function(){
-    $('#legendaDeCores').zoom();
+    if (Browser.Version() > 8) {
+        $('#legendaDeCores').zoom();
     if(window!=window.top)
         $('#estadaoDadosMainFrame').mouseover(function(){
             window.top.oReload.stop()
