@@ -31,10 +31,12 @@ function removeDadosExtras {
     TEMPFILE="TEMPFILE.tmp"
     for arquivo in $ARQUIVOS
         do
-        	sed -e 's@dados2008":\[\(.*\),\(.*\),\(.*\)\],"dados2012@dados2008":[\1,\2],"dados2012@g' $arquivo > $TEMPFILE
+        	sed -e 's@dados2012":\[\(.*\),\(.*\)\]\s*,\s*"valorFinal@dados2012":[\1,\2],"valorFinal@g' $arquivo > $TEMPFILE
             mv $TEMPFILE $arquivo
         done
 }
+
+removeDadosExtras
 
 function substituinextlevel {
     ARQUIVOS_VOTOS=`ls votos_*.json`
@@ -51,8 +53,6 @@ function substituinextlevel {
             mv $TEMPFILE $arquivo
         done
 }
-
-substituinextlevel
 
 function mudaConteudo {
     ARQUIVOS_PREFEITOS=`ls prefeitos*`
