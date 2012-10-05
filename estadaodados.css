@@ -39,7 +39,7 @@ body {
 
 #estadaoDadosMainFrame #titulo {
     font-weight: bold;
-    font: bold 15px/28px arial;
+    font: bold 18px/25px arial;
     padding-left: 10px;
 }
 
@@ -53,7 +53,7 @@ body {
 
 /* TODO: Aplicar transição */
 #estadaoDadosMainFrame #origemDados {
-    font: bold 14px/35px arial; 
+    font: bold 16px/33px arial; 
 }
 
 #legendaDeCores {
@@ -744,7 +744,7 @@ svg .title {
 .nv-title { font-size: 11px; font-weight: bold; }
 
 .nvd3.nv-bullet { font: 10px sans-serif; cursor: pointer; }
-.nvd3.nv-bullet rect { fill-opacity: .6; }
+.nvd3.nv-bullet rect { fill-opacity: .7; }
 .nvd3.nv-bullet rect:hover { fill-opacity: 1; }
 .nvd3.nv-bullet .nv-marker { stroke: #000; stroke-width: 2px; }
 .nvd3.nv-bullet .nv-markerTriangle { stroke: #000; fill: #fff; stroke-width: 1.5px; }
