@@ -97,7 +97,6 @@ body {
 #estadaoDadosAbas {
     position: relative;
     height: 30px;
-    background: url('http://estadao.com.br/estadao/v2012/img/sprite_bg.png') repeat-x 0 -84px;
 }
 
 #estadaoDadosAbas ul {
