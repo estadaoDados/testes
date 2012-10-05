@@ -5,7 +5,7 @@ var width = 956,
     margin = {top: 5, right: 30, bottom: 20, left: 1}
 
 var barWidth = 956,
-    barHeight = 44,
+    barHeight = 43,
     barMargin = {top: 2, right: 5, bottom: 20, left: 23};
 
 var duracao = 1250,
@@ -15,7 +15,7 @@ var duracao = 1250,
     erroEncontrado = false,
     mensagemErro = "",
     projecao = "prefeitos",
-    baseEscala = 0
+    baseEscala = []
 
 var Browser = {
     Version: function() {
@@ -62,6 +62,8 @@ function geraGrafico(nomeJson) {
                 if (!d3.select("#retornaBackground")[0][0]) {
                     svg.append("rect")
                         .attr("id", "retornaBackground")
+                        .attr("alt", "Clique na barra para ver um gráfico mais detalhado,<br/>em 'outros' para ver mais dados<br/>ou no fundo do gráfico para voltar à visualização anterior.")
+                        .attr("title", "Clique na barra para ver um gráfico mais detalhado,<br/>em 'outros' para ver mais dados<br/>ou no fundo do gráfico para voltar à visualização anterior.")
                         .attr("class", "retornaBackground")
                         .attr("width", width)//width - margin.left - margin.right)
                         .attr("height", height)//height - margin.top - margin.bottom)
@@ -100,15 +102,15 @@ function novoGrafico(novoJson){
         
         if (projecao=="votos") {
             if (novoJson.indexOf("partidos") != -1) {
-                $("#origemDados").text("Veja quantos votos para prefeito cada partido recebeu em 2012 e compare com 2008")
+                $("#origemDados").text("Veja quantos votos cada partido recebeu em 2012 e compare com 2008")
             } else {
-                $("#origemDados").text('Veja quantos votos o ' + novoJson.split("_")[1].toUpperCase() + ' recebeu para prefeito em 2012 e compare com 2008')
+                $("#origemDados").text('Veja quantos votos o ' + novoJson.split("_")[1].toUpperCase() + ' recebeu em 2012 e compare com 2008')
             }
         } else if (projecao=="eleitorado") {
            if (novoJson.indexOf("partidos") != -1) {
-                $("#origemDados").text("Veja o eleitorado que cada partido irá governar após 2012 e compare com 2008")
+                $("#origemDados").text("Veja quantos eleitores cada partido vai governar pós-2012 e compare a 2008")
             } else {
-                $("#origemDados").text('Veja o eleitorado que o ' + novoJson.split("_")[1].toUpperCase() + ' irá governar após 2012 e compare com 2008')
+                $("#origemDados").text('Veja quantos eleitores o ' + novoJson.split("_")[1].toUpperCase() + ' vai governar pós-2012 e compare a 2008')
             } 
         } else {
             if (novoJson.indexOf("partidos") != -1) {
@@ -166,6 +168,7 @@ function avancaGrafico(d){
         pilhaJson.push(jsonAtual)
         novoGrafico(d.nextlevel)
     }
+    nv.log(pilhaJson)
 }
 
 function voltaGrafico(){
