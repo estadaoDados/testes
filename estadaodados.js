@@ -4,7 +4,7 @@ var width = 956,
     maxSvgHeight = 434, //retirados 40px das abas e 18px do titulo e 17 linha fina
     margin = {top: 5, right: 30, bottom: 20, left: 1}
 
-var barWidth = 950,
+var barWidth = 956,
     barHeight = 43,
     barMargin = {top: 2, right: 5, bottom: 20, left: 23};
 
@@ -15,7 +15,8 @@ var duracao = 1250,
     erroEncontrado = false,
     mensagemErro = "",
     projecao = "prefeitos",
-    baseEscala = []
+    baseEscala = [],
+    sURL = unescape(window.top.location)
 
 var Browser = {
     Version: function() {
@@ -193,11 +194,24 @@ function mostraErroIE() {
     document.getElementById("erroIE").style.display = "block"
 }
 
+function formataNumero(nStr){
+    nStr += '';
+    x = nStr.split(',');
+    x1 = x[0];
+    x2 = x.length > 1 ? ',' + x[1] : '';
+    var rgx = /(\d+)(\d{3})/;
+    while (rgx.test(x1)) {
+        x1 = x1.replace(rgx, '$1' + '.' + '$2');
+    }
+    return x1 + x2;
+}
+
 if (Browser.Version() > 8) {
     geraGrafico("prefeitos_partidos")
 } else {
     mostraErroIE()
 }
+
 //Funçào que identifica clique nas abas
 $("#estadaoDadosAbas li").click( function() {
     esconderAlerta()
@@ -209,11 +223,22 @@ $("#estadaoDadosAbas li").click( function() {
     novoGrafico(projecao+"_partidos")
 })
 
+function reloadPage() {
+    if (window.top.oReload.status == "start")
+        window.top.location.href = sURL
+}
+
 $(document).ready(function(){
-    if (Browser.Version() > 8) {
+    if (Browser.Version() > 8)
         $('#legendaDeCores').zoom();
-    if(window!=window.top)
+    if(window!=window.top) {
         $('#estadaoDadosMainFrame').mouseover(function(){
             window.top.oReload.stop()
         })
+
+        $('#estadaoDadosMainFrame').mouseout(function(){
+            window.top.oReload.start()
+            setTimeout("reloadPage()", 15*1000)
+        })
+    }
 });
