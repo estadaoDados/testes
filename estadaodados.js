@@ -14,7 +14,8 @@ var duracao = 1250,
     pilhaJson = [],
     erroEncontrado = false,
     mensagemErro = "",
-    projecao = "prefeitos"
+    projecao = "prefeitos",
+    baseEscala = 0
 
 var Browser = {
     Version: function() {
@@ -105,7 +106,7 @@ function novoGrafico(novoJson){
             }
         } else if (projecao=="eleitorado") {
            if (novoJson.indexOf("partidos") != -1) {
-                $("#origemDados").text("Veja o eleitorado que cada partido irá governar em 2012 e compare com 2008")
+                $("#origemDados").text("Veja o eleitorado que cada partido irá governar após 2012 e compare com 2008")
             } else {
                 $("#origemDados").text('Veja o eleitorado que o ' + novoJson.split("_")[1].toUpperCase() + ' irá governar em 2012 e compare com 2008')
             } 
