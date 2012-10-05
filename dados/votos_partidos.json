@@ -12,5 +12,5 @@
   {"title":"PPS","nextlevel":"votos_pps_estados",          "dados2008":[2828004 ,3263926  ],"dados2012":[130,130],      "valorFinal2008":[2996706   ]},
   {"title":"PV","nextlevel":"votos_pv_estados",            "dados2008":[2975009 ,7554374  ],"dados2012":[95,95],        "valorFinal2008":[4615979   ]},
   {"title":"PSC","nextlevel":"votos_psc_estados",          "dados2008":[1014105 ,1014105  ],"dados2012":[76,76],        "valorFinal2008":[1014105   ]},
-  {"title":"Outros","nextlevel":"votos_partidos_outros",   "dados2008":[93717257,147413511],"dados2012":[301,301],      "valorFinal2008":[114096060 ]}
+  {"title":"Outros","nextlevel":"votos_partidos_outros",   "dados2008":[6682494,7319408],"dados2012":[301,301],      "valorFinal2008":[6896796]}
 ]
