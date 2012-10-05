@@ -17,6 +17,7 @@ var duracao = 1250,
     projecao = "prefeitos",
     baseEscala = [],
     sURL = unescape(window.top.location)
+    timer = 0
 
 var Browser = {
     Version: function() {
@@ -234,11 +235,12 @@ $(document).ready(function(){
     if(window!=window.top) {
         $('#estadaoDadosMainFrame').mouseover(function(){
             window.top.oReload.stop()
+            clearTimeout(timer)
         })
 
         $('#estadaoDadosMainFrame').mouseout(function(){
             window.top.oReload.start()
-            setTimeout("reloadPage()", 15*1000)
+            timer = setTimeout("reloadPage()", 15*1000)
         })
     }
 });
