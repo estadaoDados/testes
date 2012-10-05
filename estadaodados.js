@@ -108,7 +108,7 @@ function novoGrafico(novoJson){
            if (novoJson.indexOf("partidos") != -1) {
                 $("#origemDados").text("Veja o eleitorado que cada partido irá governar após 2012 e compare com 2008")
             } else {
-                $("#origemDados").text('Veja o eleitorado que o ' + novoJson.split("_")[1].toUpperCase() + ' irá governar em 2012 e compare com 2008')
+                $("#origemDados").text('Veja o eleitorado que o ' + novoJson.split("_")[1].toUpperCase() + ' irá governar após 2012 e compare com 2008')
             } 
         } else {
             if (novoJson.indexOf("partidos") != -1) {
