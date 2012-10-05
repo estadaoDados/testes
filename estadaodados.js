@@ -150,14 +150,18 @@ function novoGrafico(novoJson){
     }
 }
 
+function verificaEstaNaPilha(valor) {
+    return (pilhaJson.indexOf(valor) != -1);
+}
+
 function avancaGrafico(d){
     if (pilhaJson.length) {
-        var topoDaPilha = pilhaJson.pop()
-        if (topoDaPilha!=d.nextlevel){
-            pilhaJson.push(todoDaPilha)
+        if (verificaEstaNaPilha(d.nextlevel)) {
+            voltaGrafico()
+        } else {
             pilhaJson.push(jsonAtual)
+            novoGrafico(d.nextlevel)
         }
-        novoGrafico(d.nextlevel)
     } else {
         pilhaJson.push(jsonAtual)
         novoGrafico(d.nextlevel)
@@ -168,8 +172,6 @@ function voltaGrafico(){
     if (pilhaJson.length) {
         var novoJson = pilhaJson.pop()
         novoGrafico(novoJson)
-    } else {
-        nv.log("voltaGrafico(): Pilha vazia")
     }
 }
 
