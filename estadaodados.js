@@ -15,7 +15,7 @@ var duracao = 1250,
     erroEncontrado = false,
     mensagemErro = "",
     projecao = "prefeitos",
-    baseEscala = [],
+    baseEscala = 0,
     sURL = unescape(window.top.location)
     timer = 0
 
@@ -191,7 +191,7 @@ function esconderAlerta() {
 }
 
 function mostraErroIE() {
-    document.getElementById("noIeErro").style.display = "none"
+    document.getElementById("noIeError").style.display = "none"
     document.getElementById("erroIE").style.display = "block"
 }
 
@@ -207,41 +207,36 @@ function formataNumero(nStr){
     return x1 + x2;
 }
 
-if (Browser.Version() > 8) {
-    geraGrafico("prefeitos_partidos")
-} else {
-    mostraErroIE()
-}
-
-//Funçào que identifica clique nas abas
-$("#estadaoDadosAbas li").click( function() {
-    esconderAlerta()
-    projecao = this.firstChild.id    
-    $("#estadaoDadosAbas a.selected").removeClass("selected")
-    $(this.firstChild).addClass("selected")
-    pilhaJson.length = 0
-    $("#estadaoDadosAbas  #origemDados").text("Brasil")
-    novoGrafico(projecao+"_partidos")
-})
-
 function reloadPage() {
     if (window.top.oReload.status == "start")
         window.top.location.href = sURL
 }
 
-$(document).ready(function(){
-    if (Browser.Version() > 8) {
-        $('#legendaDeCores').zoom();
-        if(window!=window.top) {
-            $('#estadaoDadosMainFrame').mouseover(function(){
-                window.top.oReload.stop()
-                clearTimeout(timer)
-            })
 
-            $('#estadaoDadosMainFrame').mouseout(function(){
-                window.top.oReload.start()
-                timer = setTimeout("reloadPage()", 15*1000)
-            })
-        }
+if (Browser.Version() > 8) {
+    geraGrafico("prefeitos_partidos")
+    $('#legendaDeCores').zoom();
+    if(window!=window.top) {
+        $('#estadaoDadosMainFrame').mouseover(function(){
+            window.top.oReload.stop()
+            clearTimeout(timer)
+        })
+
+        $('#estadaoDadosMainFrame').mouseout(function(){
+            window.top.oReload.start()
+            timer = setTimeout("reloadPage()", 15*1000)
+        })
     }
-});
+    //Funçào que identifica clique nas abas
+    $("#estadaoDadosAbas li").click( function() {
+        esconderAlerta()
+        projecao = this.firstChild.id    
+        $("#estadaoDadosAbas a.selected").removeClass("selected")
+        $(this.firstChild).addClass("selected")
+        pilhaJson.length = 0
+        $("#estadaoDadosAbas  #origemDados").text("Brasil")
+        novoGrafico(projecao+"_partidos")
+    })
+} else {
+    mostraErroIE()
+}
