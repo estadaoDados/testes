@@ -224,7 +224,7 @@ if (Browser.Version() > 8) {
 
         $('#estadaoDadosMainFrame').mouseout(function(){
             window.top.oReload.start()
-            timer = setTimeout("reloadPage()", 15*1000)
+            timer = setTimeout("reloadPage()", 50*1000)
         })
     }
     //Funçào que identifica clique nas abas
