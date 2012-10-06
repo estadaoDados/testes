@@ -230,17 +230,18 @@ function reloadPage() {
 }
 
 $(document).ready(function(){
-    if (Browser.Version() > 8)
+    if (Browser.Version() > 8) {
         $('#legendaDeCores').zoom();
-    if(window!=window.top) {
-        $('#estadaoDadosMainFrame').mouseover(function(){
-            window.top.oReload.stop()
-            clearTimeout(timer)
-        })
+        if(window!=window.top) {
+            $('#estadaoDadosMainFrame').mouseover(function(){
+                window.top.oReload.stop()
+                clearTimeout(timer)
+            })
 
-        $('#estadaoDadosMainFrame').mouseout(function(){
-            window.top.oReload.start()
-            timer = setTimeout("reloadPage()", 15*1000)
-        })
+            $('#estadaoDadosMainFrame').mouseout(function(){
+                window.top.oReload.start()
+                timer = setTimeout("reloadPage()", 15*1000)
+            })
+        }
     }
 });
