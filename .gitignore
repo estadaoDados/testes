@@ -10,7 +10,9 @@ _site
 *.swp
 *~
 *.log
-
+dados/votos*.json
+dados/prefeitos*.json
+dados/eleitorado*.json
 
 # Private Test Data #
 #####################
